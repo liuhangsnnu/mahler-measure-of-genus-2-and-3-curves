@@ -1,0 +1,5283 @@
+\documentclass{amsart}
+\usepackage{longtable}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[dvipsnames]{color}
+\long\def\blue#1{{\color{blue}#1}}
+\long\def\green#1{{\color{green}#1}}
+\long\def\red#1{{\color{red}#1}}
+\begin{document}
+\title{Relation between Mahler measure of families of polynomials}
+
+
+
+\maketitle
+\fontsize{10}{10}\selectfont
+
+\section{Genus 2}
+\fontsize{2.5}{2.5}\selectfont
+\hspace*{1cm}
+\begin{longtable}{|l|}
+\hline
+\(\displaystyle P_k= \left(X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + 2\*k\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X^3
+ + X^2\right) \)\\
+\(\displaystyle Q_k= \left(X^3
+ + 1\right) \*Y^2
+ + \left(k\*X^3
+ + \left(-2\*k
+ + 4\right) \*X^2
+ + k\*X\right) \*Y
+ + \left(X^4
+ + X\right) \)\\
+\(\displaystyle R_k= \left(X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle S_k=Y^2
+ + \left(2\*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ - X^3
+ - X
+ + 1\right) \)\\
+\(\displaystyle T_k=Y^2
+ + \left(2\*X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(X^4
+ + 4\*X^3
+ + 6\*X^2
+ + 4\*X
+ + 1\right) \)\\
+\(\displaystyle U_k=Y^2
+ + \left(X^2
+ + k\*X
+ - 2\right) \*Y
+ + \left(X^4
+ + 4\*X^3
+ + 6\*X^2
+ + 4\*X
+ + 1\right) \)\\
+\(\displaystyle V_k=Y^2
+ + \left(X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + 2\*X^3
+ + 3\*X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ + 2}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ + 2}),2 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ + 2}),-\infty \leqslant k \leqslant -5\)\\
+\(\displaystyle m(S_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -5\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant -5,\quad m(S_k) = m(R_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{-k
+ + 2}),16 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(Q_{k}),16 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{k}),-\infty \leqslant k \leqslant -18,\quad m(T_k) = m(R_{k}),16 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{-k}),-\infty \leqslant k \leqslant -18,\quad m(T_k) = m(S_{-k}),16 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{k
+ + 2}),-\infty \leqslant k \leqslant -16,\quad \)\\
+\(\displaystyle m(U_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -16,\quad \)\\
+\(\displaystyle m(U_k) = m(R_{-k}),-\infty \leqslant k \leqslant -16,\quad m(U_k) = m(R_{-k}),18 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -16,\quad m(U_k) = m(S_{k}),18 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(P_{-k
+ + 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(Q_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(R_{k}),-\infty \leqslant k \leqslant -12,\quad m(V_k) = m(R_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(S_{-k}),-\infty \leqslant k \leqslant -12,\quad m(V_k) = m(S_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(T_{k}),-\infty \leqslant k \leqslant -18,\quad m(V_k) = m(T_{k}),16 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(U_{-k}),-\infty \leqslant k \leqslant -18,\quad m(V_k) = m(U_{-k}),16 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(2\*k
+ - 4\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X^3
+ + X^2\right) \)\\
+\(\displaystyle Q_k= \left(X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(k\*X^2
+ + k\*X\right) \*Y
+ + \left(X^3
+ + X^2
+ + X\right) \)\\
+\(\displaystyle R_k=-Y^2
+ + k\*X\*Y
+ + \left(X^4
+ - X^3
+ - X
+ + 1\right) \)\\
+\(\displaystyle S_k=Y^2
+ + \left(2\*X^2
+ + k\*X
+ - 2\right) \*Y
+ + \left(X^4
+ + 3\*X^3
+ + 4\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle T_k=Y^2
+ + \left(2\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ - 2\*X^2
+ + 1\right) \)\\
+\(\displaystyle U_k=Y^2
+ + \left(X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ - 2\*X^2
+ + 1\right) \)\\
+\(\displaystyle V_k=Y^2
+ + \left(X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(X^4
+ + X^2
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ + 2}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -5,\quad m(R_k) = m(Q_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ + 2}),13 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -13,\quad m(S_k) = m(Q_{k}),13 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -13,\quad m(S_k) = m(R_{k}),13 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{k
+ + 2}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(Q_{k}),-\infty \leqslant k \leqslant -4,\quad m(T_k) = m(Q_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{k}),-\infty \leqslant k \leqslant -5,\quad m(T_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),-\infty \leqslant k \leqslant -13,\quad m(T_k) = m(S_{k}),13 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{k
+ + 2}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(Q_{k}),-\infty \leqslant k \leqslant -4,\quad m(U_k) = m(Q_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(R_{k}),-\infty \leqslant k \leqslant -5,\quad m(U_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -13,\quad m(U_k) = m(S_{k}),13 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(P_{k
+ + 2}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(Q_{k}),-\infty \leqslant k \leqslant -4,\quad m(V_k) = m(Q_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(R_{k}),-\infty \leqslant k \leqslant -5,\quad m(V_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(S_{k}),-\infty \leqslant k \leqslant -13,\quad m(V_k) = m(S_{k}),13 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(T_{k}),-\infty \leqslant k \leqslant -4,\quad m(V_k) = m(T_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(U_{k}),-\infty \leqslant k \leqslant -4,\quad m(V_k) = m(U_{k}),4 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 4\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X^3
+ + X^2\right) \)\\
+\(\displaystyle Q_k= \left(X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \*Y^2
+ + \left(k\*X^3
+ + \left(-2\*k
+ + 12\right) \*X^2
+ + k\*X\right) \*Y
+ + \left(X^4
+ + 2\*X^3
+ + 2\*X^2
+ + X\right) \)\\
+\(\displaystyle R_k=Y^2
+ + \left(2\*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + 3\*X^3
+ + 4\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle S_k=Y^2
+ + \left(2\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + 4\*X^3
+ + 6\*X^2
+ + 4\*X
+ + 1\right) \)\\
+\(\displaystyle T_k=Y^2
+ + \left(X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + 4\*X^3
+ + 6\*X^2
+ + 4\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 2}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),14 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),14 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -20,\quad m(S_k) = m(R_{k}),14 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{k
+ - 2}),14 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(Q_{k}),14 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{k}),-\infty \leqslant k \leqslant -20,\quad m(T_k) = m(R_{k}),14 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^2
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 2\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X^2\right) \)\\
+\(\displaystyle Q_k= \left(X^3
+ + X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(k\*X^3
+ + \left(-2\*k
+ + 8\right) \*X^2
+ + k\*X\right) \*Y
+ + \left(X^4
+ + X^3
+ + X^2
+ + X\right) \)\\
+\(\displaystyle R_k=Y^2
+ + \left(2\*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + 2\*X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle S_k=Y^2
+ + \left(2\*X^2
+ + k\*X\right) \*Y
+ + \left(X^4
+ + 4\*X^3
+ + 6\*X^2
+ + 4\*X
+ + 1\right) \)\\
+\(\displaystyle T_k=Y^2
+ + \left(k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + 4\*X^3
+ + 6\*X^2
+ + 4\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 2}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),15 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),15 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -19,\quad m(S_k) = m(R_{k}),15 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{k
+ - 2}),15 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(Q_{k}),15 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{k}),-\infty \leqslant k \leqslant -19,\quad m(T_k) = m(R_{k}),15 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^2
+ + 2\*X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 10\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + 2\*X^3
+ + X^2\right) \)\\
+\(\displaystyle Q_k= \left(X^2
+ - 2\*X
+ + 1\right) \*Y^2
+ + \left(k\*X^2
+ + k\*X\right) \*Y
+ + \left(X^3
+ - 2\*X^2
+ + X\right) \)\\
+\(\displaystyle R_k=Y^2
+ + \left(2\*X^2
+ + k\*X
+ - 2\right) \*Y
+ + \left(X^4
+ - 2\*X^2
+ + 1\right) \)\\
+\(\displaystyle S_k=-Y^2
+ + k\*X\*Y
+ + \left(X^4
+ + 4\*X^3
+ + 6\*X^2
+ + 4\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -2,\quad m(R_k) = m(Q_{k}),2 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -15\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -15,\quad m(S_k) = m(Q_{k}),15 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -15,\quad m(S_k) = m(R_{k}),15 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X
+ - 1\right) \*Y^2
+ + \left(X^3
+ + k\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(-X^3
+ + X^2\right) \)\\
+\(\displaystyle Q_k=-Y^2
+ + \left(-2\*X^2
+ + k\*X\right) \*Y
+ + \left(-X^4
+ - 2\*X^3
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle R_k=Y^2
+ + \left(k\*X
+ + 2\right) \*Y
+ + \left(-X^4
+ - 2\*X^3
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 1}),-\infty \leqslant k \leqslant -6,\quad m(Q_k) = m(P_{k
+ + 1}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ + 1}),-\infty \leqslant k \leqslant -6,\quad m(R_k) = m(P_{-k
+ + 1}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 8\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X^3
+ + X^2\right) \)\\
+\(\displaystyle Q_k= \left(X^2
+ - X
+ + 1\right) \*Y^2
+ + \left(k\*X^2
+ + k\*X\right) \*Y
+ + \left(X^3
+ - X^2
+ + X\right) \)\\
+\(\displaystyle R_k=Y^2
+ + \left(2\*X^2
+ + k\*X
+ - 2\right) \*Y
+ + \left(X^4
+ - X^3
+ - X
+ + 1\right) \)\\
+\(\displaystyle S_k=-Y^2
+ + k\*X\*Y
+ + \left(X^4
+ + 3\*X^3
+ + 4\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle T_k=Y^2
+ + \left(2\*X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(X^4
+ - 2\*X^2
+ + 1\right) \)\\
+\(\displaystyle U_k=Y^2
+ + \left(X^2
+ + k\*X
+ - 2\right) \*Y
+ + \left(X^4
+ - 2\*X^2
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -5\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -5,\quad m(R_k) = m(Q_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -11\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -11,\quad m(S_k) = m(Q_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -11,\quad m(S_k) = m(R_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(T_k) = m(Q_{k}),-\infty \leqslant k \leqslant -3,\quad m(T_k) = m(Q_{k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{k}),-\infty \leqslant k \leqslant -5,\quad m(T_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),-\infty \leqslant k \leqslant -11,\quad m(T_k) = m(S_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(U_k) = m(Q_{k}),-\infty \leqslant k \leqslant -3,\quad m(U_k) = m(Q_{k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(R_{k}),-\infty \leqslant k \leqslant -5,\quad m(U_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -11,\quad m(U_k) = m(S_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^2
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 6\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X^2\right) \)\\
+\(\displaystyle Q_k= \left(X^2
+ + 1\right) \*Y^2
+ + \left(k\*X^2
+ + k\*X\right) \*Y
+ + \left(X^3
+ + X\right) \)\\
+\(\displaystyle R_k=Y^2
+ + \left(2\*X^2
+ + k\*X
+ - 2\right) \*Y
+ + \left(X^4
+ + 2\*X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle S_k=-Y^2
+ + k\*X\*Y
+ + \left(X^4
+ + 2\*X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle T_k=Y^2
+ + \left(2\*X^2
+ + k\*X\right) \*Y
+ + \left(X^4
+ - 2\*X^2
+ + 1\right) \)\\
+\(\displaystyle U_k=Y^2
+ + \left(k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ - 2\*X^2
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -4,\quad \)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -9\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -9,\quad m(R_k) = m(Q_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -7,\quad m(S_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -9,\quad m(S_k) = m(R_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(T_k) = m(Q_{k}),-\infty \leqslant k \leqslant -4,\quad m(T_k) = m(Q_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{k}),-\infty \leqslant k \leqslant -9,\quad m(T_k) = m(R_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),-\infty \leqslant k \leqslant -7,\quad m(T_k) = m(S_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(U_k) = m(Q_{k}),-\infty \leqslant k \leqslant -4,\quad m(U_k) = m(Q_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(R_{k}),-\infty \leqslant k \leqslant -9,\quad m(U_k) = m(R_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -7,\quad m(U_k) = m(S_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 4\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + X^4\)\\
+\(\displaystyle Q_k=-X\*Y^2
+ + \left(-X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle R_k=-X\*Y^2
+ + \left(X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(-X^2
+ + 1\right) \)\\
+\(\displaystyle S_k=Y^2
+ + \left(k\*X
+ + 2\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ - 2}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -2\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -5,\quad m(R_k) = m(Q_{-k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(S_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -5,\quad m(S_k) = m(Q_{-k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -4,\quad m(S_k) = m(R_{k}),3 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=Y^2
+ + \left(X^4
+ + k\*X^3
+ - 2\*k\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + X^4\)\\
+\(\displaystyle Q_k= \left(X
+ + 1\right) \*Y^2
+ + \left(X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^2
+ + X\right) \)\\
+\(\displaystyle R_k=X\*Y^2
+ + \left(-X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle S_k=Y^2
+ + \left(k\*X
+ + 2\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = 1/2m(P_{k
+ - 2}),-2 \leqslant k \leqslant 1,\quad m(Q_k) = m(P_{k
+ - 2}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 2}),-\infty \leqslant k \leqslant -3\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -3,\quad m(R_k) = m(Q_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -11,\quad m(S_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant -11,\quad m(S_k) = m(R_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 14\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + 2\*X^3
+ + 2\*X^2
+ + X\right) \)\\
+\(\displaystyle Q_k= \left(X^2
+ - X
+ + 1\right) \*Y^2
+ + \left(X^3
+ + k\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^3
+ - X^2
+ + X\right) \)\\
+\(\displaystyle R_k=-Y^3
+ - X\*Y^2
+ + \left(X^2
+ + k\*X\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle S_k=-Y^3
+ - Y^2
+ + \left(k\*X
+ + 1\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle T_k=-Y^3
+ - 3\*X\*Y^2
+ + \left(-3\*X^2
+ + k\*X\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle U_k=Y^3
+ + \left(X
+ + 2\right) \*Y^2
+ + \left(-X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle V_k=Y^3
+ + 3\*Y^2
+ + \left(k\*X
+ + 3\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle W_k=-Y^3
+ + \left(-2\*X
+ - 1\right) \*Y^2
+ + \left(-2\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle F_k=-Y^3
+ + \left(-3\*X
+ - 1\right) \*Y^2
+ + \left(-3\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(-X^3
+ + 1\right) \)\\
+\(\displaystyle G_k=Y^3
+ + \left(X
+ + 3\right) \*Y^2
+ + \left(-X^2
+ + k\*X
+ + 3\right) \*Y
+ + \left(-X^3
+ + 1\right) \)\\
+\(\displaystyle H_k=-Y^3
+ + \left(-X
+ - 1\right) \*Y^2
+ + \left(X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 3}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -7,\quad m(R_k) = m(Q_{-k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{-k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -7,\quad m(S_k) = m(Q_{-k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(T_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -7,\quad m(T_k) = m(Q_{k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{-k}),-\infty \leqslant k \leqslant 1,\quad m(T_k) = m(R_{-k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{-k}),-\infty \leqslant k \leqslant 1,\quad m(T_k) = m(S_{-k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{-k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -5,\quad m(U_k) = m(Q_{-k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(R_{k}),-\infty \leqslant k \leqslant -7,\quad m(U_k) = m(R_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -7,\quad m(U_k) = m(S_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{-k}),-\infty \leqslant k \leqslant -7,\quad m(U_k) = m(T_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(P_{-k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -7,\quad m(V_k) = m(Q_{-k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(R_{k}),-\infty \leqslant k \leqslant -3,\quad m(V_k) = m(R_{k}),-1 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(S_{k}),-\infty \leqslant k \leqslant -3,\quad m(V_k) = m(S_{k}),-1 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(T_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(U_{k}),-\infty \leqslant k \leqslant -7,\quad m(V_k) = m(U_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(W_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -7,\quad m(W_k) = m(Q_{k
+ + 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(R_{-k}),-\infty \leqslant k \leqslant -7,\quad m(W_k) = m(R_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(S_{-k}),-\infty \leqslant k \leqslant -7,\quad m(W_k) = m(S_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(T_{k}),-\infty \leqslant k \leqslant -7,\quad m(W_k) = m(T_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(U_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(V_{-k}),-\infty \leqslant k \leqslant -7,\quad m(W_k) = m(V_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(F_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -8,\quad m(F_k) = m(Q_{k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(R_{-k}),-\infty \leqslant k \leqslant -8,\quad m(F_k) = m(R_{-k}),-2 \leqslant k \leqslant 0,\quad m(F_k) = m(R_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(S_{-k}),-\infty \leqslant k \leqslant -8,\quad m(F_k) = m(S_{-k}),-2 \leqslant k \leqslant 0,\quad m(F_k) = m(S_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(T_{k}),-\infty \leqslant k \leqslant -8,\quad m(F_k) = m(T_{k}),-2 \leqslant k \leqslant 0,\quad m(F_k) = m(T_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(U_{-k}),-\infty \leqslant k \leqslant -8,\quad m(F_k) = m(U_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(V_{-k}),-\infty \leqslant k \leqslant -8,\quad m(F_k) = m(V_{-k}),-2 \leqslant k \leqslant 0,\quad m(F_k) = m(V_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(W_{k}),-\infty \leqslant k \leqslant -8,\quad m(F_k) = m(W_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(P_{-k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(Q_{-k
+ + 1}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(R_{k}),-\infty \leqslant k \leqslant -4,\quad m(G_k) = m(R_{k}),0 \leqslant k \leqslant 2,\quad m(G_k) = m(R_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(S_{k}),-\infty \leqslant k \leqslant -4,\quad m(G_k) = m(S_{k}),0 \leqslant k \leqslant 2,\quad m(G_k) = m(S_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(T_{-k}),-\infty \leqslant k \leqslant -4,\quad m(G_k) = m(T_{-k}),0 \leqslant k \leqslant 2,\quad m(G_k) = m(T_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(U_{k}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(U_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(V_{k}),-\infty \leqslant k \leqslant -4,\quad m(G_k) = m(V_{k}),0 \leqslant k \leqslant 2,\quad m(G_k) = m(V_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(W_{-k}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(W_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(F_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(P_{-k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -6,\quad m(H_k) = m(Q_{-k
+ + 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(R_{k}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(R_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(S_{k}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(S_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(T_{-k}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(T_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(U_{k}),-\infty \leqslant k \leqslant -6,\quad m(H_k) = m(U_{k}),0 \leqslant k \leqslant 3,\quad m(H_k) = m(U_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(V_{k}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(V_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(W_{-k}),-\infty \leqslant k \leqslant -6,\quad m(H_k) = m(W_{-k}),0 \leqslant k \leqslant 3,\quad m(H_k) = m(W_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(F_{-k}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(F_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(G_{k}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(G_{k}),8 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^3
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 6\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X\right) \)\\
+\(\displaystyle Q_k= \left(X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(X^3
+ + k\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^3
+ + X^2
+ + X\right) \)\\
+\(\displaystyle R_k=-Y^3
+ + \left(-X
+ + 2\right) \*Y^2
+ + \left(X^2
+ + k\*X
+ - 2\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle S_k=Y^3
+ + \left(2\*X
+ - 1\right) \*Y^2
+ + \left(2\*X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle T_k=-Y^3
+ + \left(-3\*X
+ + 2\right) \*Y^2
+ + \left(-3\*X^2
+ + k\*X
+ - 2\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle U_k=Y^3
+ + X\*Y^2
+ + \left(-X^2
+ + k\*X\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle V_k=Y^3
+ - Y^2
+ + \left(k\*X
+ - 1\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle W_k=-Y^3
+ + \left(-2\*X
+ + 3\right) \*Y^2
+ + \left(-2\*X^2
+ + k\*X
+ - 3\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle F_k=Y^3
+ + \left(X
+ - 1\right) \*Y^2
+ + \left(-X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(-X^3
+ + 1\right) \)\\
+\(\displaystyle G_k=Y^3
+ + \left(3\*X
+ - 1\right) \*Y^2
+ + \left(3\*X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle H_k=-Y^3
+ + \left(-X
+ + 3\right) \*Y^2
+ + \left(X^2
+ + k\*X
+ - 3\right) \*Y
+ + \left(X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 3}),-\infty \leqslant k \leqslant -6\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 2}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -9,\quad m(R_k) = m(Q_{-k
+ + 1}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -11\)\\
+\(\displaystyle m(S_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -11,\quad m(S_k) = m(Q_{k
+ + 1}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -11\)\\
+\(\displaystyle m(T_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -11,\quad m(T_k) = m(Q_{k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{-k}),-\infty \leqslant k \leqslant 4,\quad m(T_k) = m(R_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),-\infty \leqslant k \leqslant 4,\quad m(T_k) = m(S_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{-k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -5,\quad m(U_k) = m(Q_{-k
+ + 1}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(R_{k}),-\infty \leqslant k \leqslant -9,\quad m(U_k) = m(R_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{-k}),-\infty \leqslant k \leqslant -9,\quad m(U_k) = m(S_{-k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{-k}),-\infty \leqslant k \leqslant -7,\quad m(U_k) = m(T_{-k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(P_{-k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -5,\quad m(V_k) = m(Q_{-k
+ + 1}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(R_{k}),-\infty \leqslant k \leqslant -9,\quad m(V_k) = m(R_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(S_{-k}),-\infty \leqslant k \leqslant -9,\quad m(V_k) = m(S_{-k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(T_{-k}),-\infty \leqslant k \leqslant -7,\quad m(V_k) = m(T_{-k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(U_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -11\)\\
+\(\displaystyle m(W_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -11,\quad m(W_k) = m(Q_{k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(R_{-k}),-\infty \leqslant k \leqslant 4,\quad m(W_k) = m(R_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(S_{k}),-\infty \leqslant k \leqslant 4,\quad m(W_k) = m(S_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(T_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(U_{-k}),-\infty \leqslant k \leqslant -11,\quad m(W_k) = m(U_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(V_{-k}),-\infty \leqslant k \leqslant -11,\quad m(W_k) = m(V_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(P_{-k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -7,\quad m(F_k) = m(Q_{-k
+ + 1}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(R_{k}),-\infty \leqslant k \leqslant -9,\quad m(F_k) = m(R_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(S_{-k}),-\infty \leqslant k \leqslant -9,\quad m(F_k) = m(S_{-k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(T_{-k}),-\infty \leqslant k \leqslant -7,\quad m(F_k) = m(T_{-k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(U_{k}),-\infty \leqslant k \leqslant -7,\quad m(F_k) = m(U_{k}),-2 \leqslant k \leqslant 2,\quad m(F_k) = m(U_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(V_{k}),-\infty \leqslant k \leqslant -7,\quad m(F_k) = m(V_{k}),-2 \leqslant k \leqslant 2,\quad m(F_k) = m(V_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(W_{-k}),-\infty \leqslant k \leqslant -7,\quad m(F_k) = m(W_{-k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -12\)\\
+\(\displaystyle m(G_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -12,\quad m(G_k) = m(Q_{k
+ + 1}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(R_{-k}),-\infty \leqslant k \leqslant -12,\quad m(G_k) = m(R_{-k}),-10 \leqslant k \leqslant -4,\quad m(G_k) = m(R_{-k}),-1 \leqslant k \leqslant 3,\quad m(G_k) = m(R_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(S_{k}),-\infty \leqslant k \leqslant -12,\quad m(G_k) = m(S_{k}),-10 \leqslant k \leqslant -4,\quad m(G_k) = m(S_{k}),-1 \leqslant k \leqslant 3,\quad m(G_k) = m(S_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(T_{k}),-\infty \leqslant k \leqslant -12,\quad m(G_k) = m(T_{k}),-10 \leqslant k \leqslant -4,\quad m(G_k) = m(T_{k}),-1 \leqslant k \leqslant 3,\quad m(G_k) = m(T_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(U_{-k}),-\infty \leqslant k \leqslant -12,\quad m(G_k) = m(U_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(V_{-k}),-\infty \leqslant k \leqslant -12,\quad m(G_k) = m(V_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(W_{k}),-\infty \leqslant k \leqslant -12,\quad m(G_k) = m(W_{k}),-10 \leqslant k \leqslant -4,\quad m(G_k) = m(W_{k}),-1 \leqslant k \leqslant 3,\quad m(G_k) = m(W_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(F_{-k}),-\infty \leqslant k \leqslant -12,\quad m(G_k) = m(F_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(P_{-k
+ - 2}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -8,\quad m(H_k) = m(Q_{-k
+ + 1}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(R_{k}),-\infty \leqslant k \leqslant -9,\quad m(H_k) = m(R_{k}),-3 \leqslant k \leqslant 1,\quad m(H_k) = m(R_{k}),4 \leqslant k \leqslant 10,\quad m(H_k) = m(R_{k}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(S_{-k}),-\infty \leqslant k \leqslant -9,\quad m(H_k) = m(S_{-k}),-3 \leqslant k \leqslant 1,\quad m(H_k) = m(S_{-k}),4 \leqslant k \leqslant 10,\quad m(H_k) = m(S_{-k}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(T_{-k}),-\infty \leqslant k \leqslant -8,\quad m(H_k) = m(T_{-k}),-3 \leqslant k \leqslant 1,\quad m(H_k) = m(T_{-k}),4 \leqslant k \leqslant 10,\quad m(H_k) = m(T_{-k}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(U_{k}),-\infty \leqslant k \leqslant -8,\quad m(H_k) = m(U_{k}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(V_{k}),-\infty \leqslant k \leqslant -8,\quad m(H_k) = m(V_{k}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(W_{-k}),-\infty \leqslant k \leqslant -8,\quad m(H_k) = m(W_{-k}),-3 \leqslant k \leqslant 1,\quad m(H_k) = m(W_{-k}),4 \leqslant k \leqslant 10,\quad m(H_k) = m(W_{-k}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(F_{k}),-\infty \leqslant k \leqslant -8,\quad m(H_k) = m(F_{k}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(G_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 10\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + 2\*X^3
+ + 2\*X^2
+ + X\right) \)\\
+\(\displaystyle Q_k=Y^3
+ + \left(3\*X
+ + 2\right) \*Y^2
+ + \left(3\*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle R_k=Y^3
+ + \left(2\*X
+ + 3\right) \*Y^2
+ + \left(2\*X^2
+ + k\*X
+ + 3\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle S_k=Y^3
+ + \left(3\*X
+ + 3\right) \*Y^2
+ + \left(3\*X^2
+ + k\*X
+ + 3\right) \*Y
+ + \left(X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 2}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -20,\quad m(S_k) = m(Q_{k}),-4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -20,\quad m(S_k) = m(R_{k}),-4 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^3
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 2\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X\right) \)\\
+\(\displaystyle Q_k=Y^3
+ + 3\*X\*Y^2
+ + \left(3\*X^2
+ + k\*X\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle R_k=-Y^3
+ + 3\*Y^2
+ + \left(k\*X
+ - 3\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle S_k=-Y^3
+ + \left(-3\*X
+ + 3\right) \*Y^2
+ + \left(-3\*X^2
+ + k\*X
+ - 3\right) \*Y
+ + \left(-X^3
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 2}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -16,\quad m(S_k) = m(Q_{k}),-14 \leqslant k \leqslant -8,\quad m(S_k) = m(Q_{k}),-1 \leqslant k \leqslant 4,\quad m(S_k) = m(Q_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant -16,\quad m(S_k) = m(R_{-k}),-14 \leqslant k \leqslant -8,\quad m(S_k) = m(R_{-k}),-1 \leqslant k \leqslant 4,\quad m(S_k) = m(R_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^3
+ + X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 10\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X^3
+ + X^2
+ + X\right) \)\\
+\(\displaystyle Q_k= \left(X^2
+ + 1\right) \*Y^2
+ + \left(X^3
+ + k\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^3
+ + X\right) \)\\
+\(\displaystyle R_k=-Y^3
+ + \left(-X
+ + 1\right) \*Y^2
+ + \left(X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle S_k=Y^3
+ + \left(X
+ - 1\right) \*Y^2
+ + \left(X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle T_k=-Y^3
+ + \left(-3\*X
+ + 1\right) \*Y^2
+ + \left(-3\*X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle U_k=Y^3
+ + \left(X
+ + 1\right) \*Y^2
+ + \left(-X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle V_k=-Y^3
+ + \left(-X
+ + 3\right) \*Y^2
+ + \left(-X^2
+ + k\*X
+ - 3\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle W_k=-Y^3
+ + \left(-X
+ - 1\right) \*Y^2
+ + \left(-X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle F_k=Y^3
+ + \left(3\*X
+ - 1\right) \*Y^2
+ + \left(3\*X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(X^3
+ + X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle G_k=-Y^3
+ + \left(-X
+ + 3\right) \*Y^2
+ + \left(X^2
+ + k\*X
+ - 3\right) \*Y
+ + \left(X^3
+ + X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle H_k=-Y^3
+ + \left(-X
+ - 1\right) \*Y^2
+ + \left(X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^3
+ + X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 3}),-\infty \leqslant k \leqslant -6\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 2}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -8,\quad m(R_k) = m(Q_{-k
+ + 1}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -9\)\\
+\(\displaystyle m(S_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -9,\quad m(S_k) = m(Q_{k
+ + 1}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -9\)\\
+\(\displaystyle m(T_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -9,\quad m(T_k) = m(Q_{k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{-k}),-\infty \leqslant k \leqslant 2,\quad m(T_k) = m(R_{-k}),5 \leqslant k \leqslant 6,\quad m(T_k) = m(R_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),-\infty \leqslant k \leqslant 2,\quad m(T_k) = m(S_{k}),5 \leqslant k \leqslant 6,\quad m(T_k) = m(S_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{-k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -3,\quad m(U_k) = m(Q_{-k
+ + 1}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(R_{k}),-\infty \leqslant k \leqslant -8,\quad m(U_k) = m(R_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{-k}),-\infty \leqslant k \leqslant -8,\quad m(U_k) = m(S_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{-k}),-\infty \leqslant k \leqslant -7,\quad m(U_k) = m(T_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -9\)\\
+\(\displaystyle m(V_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -9,\quad m(V_k) = m(Q_{k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(R_{-k}),-\infty \leqslant k \leqslant 2,\quad m(V_k) = m(R_{-k}),5 \leqslant k \leqslant 6,\quad m(V_k) = m(R_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(S_{k}),-\infty \leqslant k \leqslant 2,\quad m(V_k) = m(S_{k}),5 \leqslant k \leqslant 6,\quad m(V_k) = m(S_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(T_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(U_{-k}),-\infty \leqslant k \leqslant -9,\quad m(V_k) = m(U_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(W_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -8,\quad m(W_k) = m(Q_{k
+ + 1}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(R_{-k}),-\infty \leqslant k \leqslant -9,\quad m(W_k) = m(R_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(S_{k}),-\infty \leqslant k \leqslant -9,\quad m(W_k) = m(S_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(T_{k}),-\infty \leqslant k \leqslant -9,\quad m(W_k) = m(T_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(U_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(V_{k}),-\infty \leqslant k \leqslant -9,\quad m(W_k) = m(V_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -9\)\\
+\(\displaystyle m(F_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -9,\quad m(F_k) = m(Q_{k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(R_{-k}),-\infty \leqslant k \leqslant -5,\quad m(F_k) = m(R_{-k}),-1 \leqslant k \leqslant 2,\quad m(F_k) = m(R_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(S_{k}),-\infty \leqslant k \leqslant -5,\quad m(F_k) = m(S_{k}),-1 \leqslant k \leqslant 2,\quad m(F_k) = m(S_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(T_{k}),-\infty \leqslant k \leqslant -5,\quad m(F_k) = m(T_{k}),-1 \leqslant k \leqslant 2,\quad m(F_k) = m(T_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(U_{-k}),-\infty \leqslant k \leqslant -9,\quad m(F_k) = m(U_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(V_{k}),-\infty \leqslant k \leqslant -5,\quad m(F_k) = m(V_{k}),-1 \leqslant k \leqslant 2,\quad m(F_k) = m(V_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(W_{k}),-\infty \leqslant k \leqslant -9,\quad m(F_k) = m(W_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(P_{-k
+ - 2}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(Q_{-k
+ + 1}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(R_{k}),-\infty \leqslant k \leqslant -8,\quad m(G_k) = m(R_{k}),-2 \leqslant k \leqslant 1,\quad m(G_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(S_{-k}),-\infty \leqslant k \leqslant -8,\quad m(G_k) = m(S_{-k}),-2 \leqslant k \leqslant 1,\quad m(G_k) = m(S_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(T_{-k}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(T_{-k}),-2 \leqslant k \leqslant 1,\quad m(G_k) = m(T_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(U_{k}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(U_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(V_{-k}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(V_{-k}),-2 \leqslant k \leqslant 1,\quad m(G_k) = m(V_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(W_{-k}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(W_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(F_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(P_{-k
+ - 2}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(Q_{-k
+ + 1}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(R_{k}),-\infty \leqslant k \leqslant -8,\quad m(H_k) = m(R_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(S_{-k}),-\infty \leqslant k \leqslant -8,\quad m(H_k) = m(S_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(T_{-k}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(T_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(U_{k}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(U_{k}),-1 \leqslant k \leqslant 1,\quad m(H_k) = m(U_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(V_{-k}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(V_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(W_{-k}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(W_{-k}),-1 \leqslant k \leqslant 1,\quad m(H_k) = m(W_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(F_{-k}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(F_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(G_{k}),-\infty \leqslant k \leqslant -7,\quad m(H_k) = m(G_{k}),9 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^3
+ + X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 6\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X^3
+ + X^2
+ + X\right) \)\\
+\(\displaystyle Q_k=Y^3
+ + \left(3\*X
+ + 1\right) \*Y^2
+ + \left(3\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle R_k=Y^3
+ + \left(X
+ + 3\right) \*Y^2
+ + \left(X^2
+ + k\*X
+ + 3\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle S_k=Y^3
+ + \left(3\*X
+ + 3\right) \*Y^2
+ + \left(3\*X^2
+ + k\*X
+ + 3\right) \*Y
+ + \left(X^3
+ + X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 2}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -18,\quad m(S_k) = m(Q_{k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -18,\quad m(S_k) = m(R_{k}),3 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 18\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + 3\*X^3
+ + 3\*X^2
+ + X\right) \)\\
+\(\displaystyle Q_k= \left(X^2
+ - 2\*X
+ + 1\right) \*Y^2
+ + \left(X^3
+ + k\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^3
+ - 2\*X^2
+ + X\right) \)\\
+\(\displaystyle R_k=-Y^3
+ + \left(-X
+ - 1\right) \*Y^2
+ + \left(X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle S_k=-Y^3
+ + \left(-3\*X
+ - 1\right) \*Y^2
+ + \left(-3\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle T_k=Y^3
+ + \left(X
+ + 3\right) \*Y^2
+ + \left(-X^2
+ + k\*X
+ + 3\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 3}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -7,\quad m(R_k) = m(Q_{-k
+ + 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(S_k) = m(Q_{k
+ + 1}),-\infty \leqslant k \leqslant -7,\quad m(S_k) = m(Q_{k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant -7,\quad m(S_k) = m(R_{-k}),-3 \leqslant k \leqslant -1,\quad m(S_k) = m(R_{-k}),1 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{-k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(Q_{-k
+ + 1}),-\infty \leqslant k \leqslant -7,\quad m(T_k) = m(Q_{-k
+ + 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{k}),-\infty \leqslant k \leqslant -1,\quad m(T_k) = m(R_{k}),1 \leqslant k \leqslant 3,\quad m(T_k) = m(R_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 14\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + 3\*X^3
+ + 3\*X^2
+ + X\right) \)\\
+\(\displaystyle Q_k=Y^3
+ + \left(3\*X
+ + 3\right) \*Y^2
+ + \left(3\*X^2
+ + k\*X
+ + 3\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),7 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=Y^2
+ + \left(X^3
+ + k\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + X^3\)\\
+\(\displaystyle Q_k=X\*Y^2
+ + \left(2\*X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle R_k=-X\*Y^2
+ + \left(-2\*X^2
+ + k\*X
+ - 1\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle S_k=X\*Y^2
+ + \left(k\*X
+ - 1\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ + 1}),-\infty \leqslant k \leqslant -10,\quad m(Q_k) = m(P_{-k
+ + 1}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ + 1}),-\infty \leqslant k \leqslant -4,\quad m(R_k) = m(P_{k
+ + 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -8,\quad m(R_k) = m(Q_{-k}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ + 1}),-\infty \leqslant k \leqslant -6,\quad m(S_k) = m(P_{k
+ + 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -8,\quad m(S_k) = m(Q_{-k}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -6,\quad m(S_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 6\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X^3\right) \)\\
+\(\displaystyle Q_k=-X\*Y^2
+ + \left(k\*X
+ + 1\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle R_k=-X\*Y^2
+ + \left(-2\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(-X^3
+ - X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 2}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -6,\quad m(R_k) = m(Q_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 2\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X^3\right) \)\\
+\(\displaystyle Q_k=X\*Y^2
+ + \left(2\*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^3
+ + 3\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),6 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^4
+ + 2\*X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \*Y^2
+ + \left(2\*X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 12\right) \*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + 2\*X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle Q_k= \left(X^4
+ + 4\*X^3
+ + 6\*X^2
+ + 4\*X
+ + 1\right) \*Y^2
+ + \left(k\*X^3
+ + \left(-2\*k
+ + 32\right) \*X^2
+ + k\*X\right) \*Y
+ + \left(X^4
+ + 4\*X^3
+ + 6\*X^2
+ + 4\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 4}),16 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^4
+ + X^3
+ + 2\*X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(2\*X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 8\right) \*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + X^3
+ + 2\*X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle Q_k= \left(X^4
+ + 2\*X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 14\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + 2\*X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle R_k= \left(X^4
+ + 3\*X^3
+ + 4\*X^2
+ + 3\*X
+ + 1\right) \*Y^2
+ + \left(k\*X^3
+ + \left(-2\*k
+ + 24\right) \*X^2
+ + k\*X\right) \*Y
+ + \left(X^4
+ + 3\*X^3
+ + 4\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 4}),14 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k
+ - 2}),14 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle Q_k= \left(X^4
+ + X^3
+ + 2\*X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(2\*X^4
+ + k\*X^3
+ + 2\*k\*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + X^3
+ + 2\*X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle R_k= \left(X^4
+ + 2\*X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 18\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + 2\*X^3
+ + 2\*X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle S_k= \left(X^4
+ + X^3
+ + X
+ + 1\right) \*Y^2
+ + \left(k\*X^3
+ + \left(-2\*k
+ + 8\right) \*X^2
+ + k\*X\right) \*Y
+ + \left(X^4
+ + X^3
+ + X
+ + 1\right) \)\\
+\(\displaystyle m(R_k) = m(Q_{k
+ + 6}),-\infty \leqslant k \leqslant -16\)\\
+\(\displaystyle m(S_k) = m(Q_{-k
+ + 4}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k
+ - 2}),14 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^4
+ + 3\*X^3
+ + 4\*X^2
+ + 3\*X
+ + 1\right) \*Y^2
+ + \left(2\*X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 20\right) \*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + 3\*X^3
+ + 4\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle Q_k= \left(X^4
+ + 4\*X^3
+ + 6\*X^2
+ + 4\*X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 30\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + 4\*X^3
+ + 6\*X^2
+ + 4\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),12 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^4
+ + X^2
+ + 1\right) \*Y^2
+ + \left(2\*X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 2\right) \*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + X^2
+ + 1\right) \)\\
+\(\displaystyle Q_k= \left(X^4
+ + X^3
+ + X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 6\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + X^3
+ + X
+ + 1\right) \)\\
+\(\displaystyle R_k= \left(X^4
+ + 3\*X^3
+ + 4\*X^2
+ + 3\*X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 26\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + 3\*X^3
+ + 4\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 6}),-\infty \leqslant k \leqslant -18\)\\
+\(\displaystyle m(R_k) = m(Q_{-k
+ - 4}),-\infty \leqslant k \leqslant -18,\quad \)\\
+\hline
+\(\displaystyle P_k= \left(X^4
+ + 2\*X^3
+ + 3\*X^2
+ + 2\*X
+ + 1\right) \*Y^2
+ + \left(2\*X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 14\right) \*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + 2\*X^3
+ + 3\*X^2
+ + 2\*X
+ + 1\right) \)\\
+\(\displaystyle Q_k= \left(X^4
+ + 3\*X^3
+ + 4\*X^2
+ + 3\*X
+ + 1\right) \*Y^2
+ + \left(X^4
+ + k\*X^3
+ + \left(-2\*k
+ + 22\right) \*X^2
+ + k\*X
+ + 1\right) \*Y
+ + \left(X^4
+ + 3\*X^3
+ + 4\*X^2
+ + 3\*X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),10 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^4
+ + X^3
+ + X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(2\*X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 14\right) \*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + X^3
+ + X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle Q_k= \left(X^4
+ + X^3
+ + X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(2\*X^4
+ + k\*X^3
+ + \left(2\*k
+ - 6\right) \*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + X^3
+ + X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),18 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k= \left(X^4
+ + X^3
+ + 2\*X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(2\*X^4
+ + k\*X^3
+ + \left(-2\*k
+ - 16\right) \*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + X^3
+ + 2\*X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle Q_k= \left(X^4
+ + X^3
+ + 2\*X^2
+ + X
+ + 1\right) \*Y^2
+ + \left(2\*X^4
+ + k\*X^3
+ + \left(2\*k
+ - 8\right) \*X^2
+ + k\*X
+ + 2\right) \*Y
+ + \left(X^4
+ + X^3
+ + 2\*X^2
+ + X
+ + 1\right) \)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),18 \leqslant k \leqslant +\infty\)\\
+\hline
+\end{longtable}
+
+
+
+\fontsize{10}{10}\selectfont
+\section{Genus 3}
+\fontsize{2.5}{2.5}\selectfont
+\hspace*{1cm}
+\begin{longtable}{|l|}
+\hline
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)^{2}(y^2+x^2)+(x^6
+ + k\*x^5
+ + 4\*x^4
+ + \left(-2\*k
+ + 8\right) \*x^3
+ + 4\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle R_k=(x
+ + 1)^{2}(y^2+x^2)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ + 6\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle S_k=(x
+ + 1)^{3}(y^2+x)+(k\*x^3
+ + \left(-2\*k
+ + 16\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle T_k=(x
+ + 1)^{2}(y^2+1)+(2\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle U_k=(x
+ + 1)^{2}(y^2+1)+(x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle V_k=(x
+ + 1)^{2}(y^2+1)+(k\*x)y\)\\
+\(\displaystyle W_k=y^{2}+(2\*x^2
+ + k\*x
+ + 2)y^{}+(x^4
+ + 4\*x^3
+ + 6\*x^2
+ + 4\*x
+ + 1)\)\\
+\(\displaystyle F_k=y^{2}+(k\*x)y^{}+(x^4
+ + 4\*x^3
+ + 6\*x^2
+ + 4\*x
+ + 1)\)\\
+\(\displaystyle G_k=y^{2}+(x^2
+ + k\*x
+ + 1)y^{}+(x^4
+ + 4\*x^3
+ + 6\*x^2
+ + 4\*x
+ + 1)\)\\
+\(\displaystyle H_k=y^{2}+(2\*x^2
+ + k\*x
+ + 2)y^{}+(x^4
+ + 2\*x^2
+ + 1)\)\\
+\(\displaystyle m(S_k) = m(R_{k
+ - 2}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle \)\\
+\(\displaystyle m(T_k) = 1/2m(R_{k
+ - 2}),0 \leqslant k \leqslant 3,\quad m(T_k) = m(R_{k
+ - 2}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = 1/2m(Q_{k}),0 \leqslant k \leqslant 1\)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle m(W_k) = m(R_{k
+ - 2}),13 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(S_{k}),13 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(T_{k}),-\infty \leqslant k \leqslant -21,\quad m(W_k) = m(T_{k}),13 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(V_{k}),-\infty \leqslant k \leqslant -17,\quad m(F_k) = m(V_{k}),17 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(U_{k}),-\infty \leqslant k \leqslant -19,\quad m(G_k) = m(U_{k}),15 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle m(H_k) = m(V_{k}),-\infty \leqslant k \leqslant -9,\quad m(H_k) = m(V_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(F_{k}),-\infty \leqslant k \leqslant -17,\quad m(H_k) = m(F_{k}),17 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle \)\\
+\hline
+\(\displaystyle P_k=(x^4
+ - x^2
+ + 1)(y^2+x^2)+(x^6
+ + k\*x^5
+ - x^4
+ + \left(-2\*k
+ + 2\right) \*x^3
+ - x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^4
+ - x^2
+ + 1)(y^2+x)+(k\*x^4
+ + \left(-k
+ + 1\right) \*x^3
+ + \left(-k
+ + 1\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle R_k=y^{2}+(k\*x
+ + 1)y^{}+(x^4
+ + x^3
+ + 2\*x^2
+ + x
+ + 1)\)\\
+\(\displaystyle S_k=y^{2}+(x^2
+ + k\*x)y^{}+(x^4
+ + x^3
+ + 2\*x^2
+ + x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -2,\quad m(S_k) = m(R_{k}),4 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)^{2}(y^2+x^2)+(x^6
+ + k\*x^5
+ + 3\*x^4
+ + \left(-2\*k
+ + 10\right) \*x^3
+ + 3\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)^{2}(y^2+x)+(k\*x^4
+ + \left(-k
+ + 9\right) \*x^3
+ + \left(-k
+ + 9\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle R_k=y^{2}+(2\*x^2
+ + k\*x
+ + 1)y^{}+(x^4
+ + 3\*x^3
+ + 4\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle S_k=y^{2}+(x^2
+ + k\*x
+ + 2)y^{}+(x^4
+ + 3\*x^3
+ + 4\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)(y^2+x^2)+(x^6
+ + k\*x^5
+ - x^4
+ + \left(-2\*k
+ - 6\right) \*x^3
+ - x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)(y^2+x)+(k\*x^4
+ + \left(-k
+ + 3\right) \*x^3
+ + \left(-k
+ + 3\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle R_k=y^{2}+(2\*x^2
+ + k\*x
+ + 1)y^{}+(x^4
+ - x^3
+ - x
+ + 1)\)\\
+\(\displaystyle S_k=y^{2}+(x^2
+ + k\*x
+ + 2)y^{}+(x^4
+ - x^3
+ - x
+ + 1)\)\\
+\(\displaystyle T_k=y^{2}+(2\*x^2
+ + k\*x
+ - 1)y^{}+(x^4
+ + 3\*x^3
+ + 4\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle U_k=y^{2}+(x^2
+ + k\*x
+ - 2)y^{}+(x^4
+ + 3\*x^3
+ + 4\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(S_k) = m(P_{k}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(S_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -1,\quad m(S_k) = m(R_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{-k}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(Q_{k}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{-k}),-\infty \leqslant k \leqslant -14,\quad m(T_k) = m(R_{-k}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{-k}),-\infty \leqslant k \leqslant -14,\quad m(T_k) = m(S_{-k}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{k}),-\infty \leqslant k \leqslant -12\)\\
+\(\displaystyle m(U_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -12\)\\
+\(\displaystyle m(U_k) = m(R_{k}),-\infty \leqslant k \leqslant -12,\quad m(U_k) = m(R_{k}),14 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -12,\quad m(U_k) = m(S_{k}),14 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+x^2)+(x^6
+ + k\*x^5
+ + x^4
+ + \left(-2\*k
+ + 8\right) \*x^3
+ + x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+x)+(k\*x^4
+ + \left(-k
+ + 6\right) \*x^3
+ + \left(-k
+ + 6\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle R_k=y^{2}+(2\*x^2
+ + k\*x
+ + 1)y^{}+(x^4
+ + 2\*x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle S_k=y^{2}+(x^2
+ + k\*x
+ + 2)y^{}+(x^4
+ + 2\*x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle T_k=y^{2}+(2\*x^2
+ + k\*x)y^{}+(x^4
+ + 3\*x^3
+ + 4\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle U_k=y^{2}+(k\*x
+ + 2)y^{}+(x^4
+ + 3\*x^3
+ + 4\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(Q_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{k}),-\infty \leqslant k \leqslant -15,\quad m(T_k) = m(R_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),-\infty \leqslant k \leqslant -15,\quad m(T_k) = m(S_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(Q_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(R_{k}),-\infty \leqslant k \leqslant -15,\quad m(U_k) = m(R_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -15,\quad m(U_k) = m(S_{k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)^{2}(y^2+x^2)+(x^6
+ + k\*x^5
+ - 5\*x^4
+ + \left(-2\*k
+ - 10\right) \*x^3
+ - 5\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)^{2}(y^2+x)+(k\*x^4
+ + \left(-k
+ + 1\right) \*x^3
+ + \left(-k
+ + 1\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle R_k=y^{2}+(2\*x^2
+ + k\*x
+ - 1)y^{}+(x^4
+ - x^3
+ - x
+ + 1)\)\\
+\(\displaystyle S_k=y^{2}+(x^2
+ + k\*x
+ - 2)y^{}+(x^4
+ - x^3
+ - x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(S_k) = m(P_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant -5,\quad m(S_k) = m(R_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+x^2)+(x^6
+ + k\*x^5
+ - 3\*x^4
+ + \left(-2\*k
+ - 8\right) \*x^3
+ - 3\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)(x^2
+ + 1)(y^2+x)+(k\*x^4
+ + \left(-k
+ + 2\right) \*x^3
+ + \left(-k
+ + 2\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle R_k=y^{2}+(2\*x^2
+ + k\*x
+ - 1)y^{}+(x^4
+ + 2\*x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle S_k=y^{2}+(x^2
+ + k\*x
+ - 2)y^{}+(x^4
+ + 2\*x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle T_k=y^{2}+(2\*x^2
+ + k\*x)y^{}+(x^4
+ - x^3
+ - x
+ + 1)\)\\
+\(\displaystyle U_k=y^{2}+(k\*x
+ + 2)y^{}+(x^4
+ - x^3
+ - x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(S_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{k}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(T_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -3\)\\
+\(\displaystyle m(T_k) = m(R_{-k}),-\infty \leqslant k \leqslant -8,\quad m(T_k) = m(R_{-k}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),-\infty \leqslant k \leqslant -8,\quad m(T_k) = m(S_{k}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{k}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(U_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -3\)\\
+\(\displaystyle m(U_k) = m(R_{-k}),-\infty \leqslant k \leqslant -8,\quad m(U_k) = m(R_{-k}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -8,\quad m(U_k) = m(S_{k}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{k}),-\infty \leqslant k \leqslant -3,\quad m(U_k) = m(T_{k}),7 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)^{2}(y^2+x^2)+(x^6
+ + k\*x^5
+ - x^4
+ + \left(-2\*k
+ - 8\right) \*x^3
+ - x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)^{2}(y^2+x)+(k\*x^4
+ + \left(-k
+ + 4\right) \*x^3
+ + \left(-k
+ + 4\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle R_k=y^{2}+(2\*x^2
+ + k\*x)y^{}+(x^4
+ + 2\*x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle S_k=y^{2}+(k\*x
+ + 2)y^{}+(x^4
+ + 2\*x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)(y^2+x^4)+(x^6
+ + k\*x^5
+ + \left(-2\*k
+ + 4\right) \*x^3
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=xy^{2}+(-x^2
+ + k\*x
+ - 1)y^{}+(x^2
+ + x
+ + 1)\)\\
+\(\displaystyle R_k=y^{2}+(k\*x
+ + 2)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),-\infty \leqslant k \leqslant -3,\quad \)\\
+\(\displaystyle m(R_k) = m(P_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -9,\quad m(R_k) = m(Q_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)(y^2+x^4)+(x^6
+ + k\*x^5
+ - 2\*x^4
+ + \left(-2\*k
+ - 4\right) \*x^3
+ - 2\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(-x)y^{2}+(-x^2
+ + k\*x
+ - 1)y^{}+(x^2
+ + x
+ + 1)\)\\
+\(\displaystyle R_k=y^{2}+(k\*x
+ + 2)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k}),-\infty \leqslant k \leqslant -3\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -4,\quad m(R_k) = m(Q_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(y^2+x^4)+(x^6
+ + k\*x^5
+ - x^4
+ + \left(-2\*k
+ + 4\right) \*x^3
+ - x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=xy^{2}+(-x^2
+ + k\*x
+ - 1)y^{}+(x^2
+ + 1)\)\\
+\(\displaystyle R_k=y^{2}+(k\*x
+ + 2)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),-\infty \leqslant k \leqslant -3\)\\
+\(\displaystyle m(R_k) = m(P_{k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -7,\quad m(R_k) = m(Q_{-k}),3 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(y^2+x^6)+(x^6
+ + k\*x^5
+ - 2\*k\*x^3
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(y^2+x^2)+(x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle R_k=xy^{2}+(k\*x)y^{}+(x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = 1/2m(P_{k}),-2 \leqslant k \leqslant -1,\quad m(Q_k) = 1/2m(P_{k}),1 \leqslant k \leqslant 2\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -5,\quad m(R_k) = m(Q_{k}),5 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ - 4\right) \*x^3
+ + \left(-k
+ - 4\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=y^{3}+(k\*x)y^{}+(-x^3
+ - x^2
+ + x
+ + 1)\)\\
+\(\displaystyle R_k=(-1)y^{3}+(-2\*x
+ + 2)y^{2}+(-2\*x^2
+ + k\*x
+ - 2)y^{}+(-x^3
+ - x^2
+ + x
+ + 1)\)\\
+\(\displaystyle S_k=y^{3}+xy^{2}+(-x^2
+ + k\*x)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle T_k=y^{3}+(-1)y^{2}+(k\*x
+ - 1)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle U_k=(-1)y^{3}+(-x
+ + 2)y^{2}+(x^2
+ + k\*x
+ - 2)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle V_k=y^{3}+(2\*x
+ - 1)y^{2}+(2\*x^2
+ + k\*x
+ - 1)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ - 1}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -9\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -9,\quad m(R_k) = m(Q_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{-k
+ - 1}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -3,\quad m(S_k) = m(Q_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant -5,\quad m(S_k) = m(R_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{-k
+ - 1}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(Q_{k}),-\infty \leqslant k \leqslant -3,\quad m(T_k) = m(Q_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{-k}),-\infty \leqslant k \leqslant -5,\quad m(T_k) = m(R_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{-k
+ - 1}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(Q_{k}),-\infty \leqslant k \leqslant -5,\quad m(U_k) = m(Q_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(R_{-k}),-\infty \leqslant k \leqslant -5,\quad m(U_k) = m(R_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -5,\quad m(U_k) = m(S_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{k}),-\infty \leqslant k \leqslant -5,\quad m(U_k) = m(T_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -9\)\\
+\(\displaystyle m(V_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -9,\quad m(V_k) = m(Q_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(R_{k}),-\infty \leqslant k \leqslant -9,\quad m(V_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(S_{-k}),-\infty \leqslant k \leqslant -9,\quad m(V_k) = m(S_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(T_{-k}),-\infty \leqslant k \leqslant -9,\quad m(V_k) = m(T_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(U_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)^{2}(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ + 8\right) \*x^3
+ + \left(-k
+ + 8\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=y^{3}+(2\*x
+ + 2)y^{2}+(2\*x^2
+ + k\*x
+ + 2)y^{}+(x^3
+ + 3\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle R_k=y^{3}+(3\*x
+ + 2)y^{2}+(3\*x^2
+ + k\*x
+ + 2)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle S_k=y^{3}+(2\*x
+ + 3)y^{2}+(2\*x^2
+ + k\*x
+ + 3)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -12,\quad m(R_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -12,\quad m(S_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)^{2}(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ - 2\right) \*x^3
+ + \left(-k
+ - 2\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)^{2}(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ - 10\right) \*x^3
+ + \left(-k
+ - 10\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle R_k=y^{3}+(2)y^{2}+(k\*x
+ + 2)y^{}+(-x^3
+ - x^2
+ + x
+ + 1)\)\\
+\(\displaystyle S_k=(-1)y^{3}+(-2\*x)y^{2}+(-2\*x^2
+ + k\*x)y^{}+(-x^3
+ - x^2
+ + x
+ + 1)\)\\
+\(\displaystyle T_k=y^{3}+(x
+ + 2)y^{2}+(-x^2
+ + k\*x
+ + 2)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle U_k=(-1)y^{3}+(-2\*x
+ - 1)y^{2}+(-2\*x^2
+ + k\*x
+ + 1)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle V_k=(-1)y^{3}+(-x)y^{2}+(x^2
+ + k\*x)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle W_k=(-1)y^{3}+(-1)y^{2}+(k\*x
+ + 1)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -5\)\\
+\(\displaystyle m(S_k) = m(Q_{k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{-k
+ - 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(Q_{-k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{k}),-\infty \leqslant k \leqslant -2,\quad m(T_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{-k}),-\infty \leqslant k \leqslant -2,\quad m(T_k) = m(S_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -5\)\\
+\(\displaystyle m(U_k) = m(Q_{k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(U_k) = m(R_{-k}),-\infty \leqslant k \leqslant -5,\quad m(U_k) = m(R_{-k}),2 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -5,\quad m(U_k) = m(S_{k}),2 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(P_{-k
+ - 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(Q_{-k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(R_{k}),-\infty \leqslant k \leqslant -3,\quad m(V_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(S_{-k}),-\infty \leqslant k \leqslant -3,\quad m(V_k) = m(S_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(T_{k}),-\infty \leqslant k \leqslant -3,\quad m(V_k) = m(T_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(U_{-k}),-\infty \leqslant k \leqslant -3,\quad m(V_k) = m(U_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(P_{-k
+ - 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(Q_{-k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(R_{k}),-\infty \leqslant k \leqslant -3,\quad m(W_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(S_{-k}),-\infty \leqslant k \leqslant -3,\quad m(W_k) = m(S_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(T_{k}),-\infty \leqslant k \leqslant -3,\quad m(W_k) = m(T_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(U_{-k}),-\infty \leqslant k \leqslant -3,\quad m(W_k) = m(U_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(V_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ + 2\right) \*x^3
+ + \left(-k
+ + 2\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(-1)y^{3}+(2)y^{2}+(k\*x
+ - 2)y^{}+(x^3
+ + 3\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle R_k=y^{3}+(2\*x)y^{2}+(2\*x^2
+ + k\*x)y^{}+(x^3
+ + 3\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle S_k=(-1)y^{3}+(-3\*x
+ + 2)y^{2}+(-3\*x^2
+ + k\*x
+ - 2)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle T_k=(-1)y^{3}+(-2\*x
+ + 3)y^{2}+(-2\*x^2
+ + k\*x
+ - 3)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle U_k=y^{3}+(3\*x)y^{2}+(3\*x^2
+ + k\*x)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle V_k=(-1)y^{3}+(3)y^{2}+(k\*x
+ - 3)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -13,\quad m(S_k) = m(Q_{-k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -13,\quad m(S_k) = m(R_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -13,\quad m(T_k) = m(Q_{-k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{k}),-\infty \leqslant k \leqslant -13,\quad m(T_k) = m(R_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -3,\quad m(U_k) = m(Q_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(R_{k}),-\infty \leqslant k \leqslant -3,\quad m(U_k) = m(R_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -13,\quad m(U_k) = m(S_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{k}),-\infty \leqslant k \leqslant -13,\quad m(U_k) = m(T_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(P_{-k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(V_k) = m(Q_{k}),-\infty \leqslant k \leqslant -7,\quad m(V_k) = m(Q_{k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(R_{-k}),-\infty \leqslant k \leqslant -7,\quad m(V_k) = m(R_{-k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(S_{-k}),-\infty \leqslant k \leqslant -7,\quad m(V_k) = m(S_{-k}),13 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(T_{-k}),-\infty \leqslant k \leqslant -7,\quad m(V_k) = m(T_{-k}),13 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(U_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ - 7\right) \*x^3
+ + \left(-k
+ - 7\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)(x^2
+ + 1)(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ - 3\right) \*x^3
+ + \left(-k
+ - 3\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle R_k=(-1)y^{3}+(-x
+ + 2)y^{2}+(-x^2
+ + k\*x
+ - 2)y^{}+(-x^3
+ - x^2
+ + x
+ + 1)\)\\
+\(\displaystyle S_k=(-1)y^{3}+(-x)y^{2}+(-x^2
+ + k\*x)y^{}+(-x^3
+ - x^2
+ + x
+ + 1)\)\\
+\(\displaystyle T_k=y^{3}+y^{2}+(k\*x
+ + 1)y^{}+(-x^3
+ - x^2
+ + x
+ + 1)\)\\
+\(\displaystyle U_k=(-1)y^{3}+(-2\*x
+ + 1)y^{2}+(-2\*x^2
+ + k\*x
+ - 1)y^{}+(-x^3
+ - x^2
+ + x
+ + 1)\)\\
+\(\displaystyle V_k=(-1)y^{3}+(-x
+ + 2)y^{2}+(x^2
+ + k\*x
+ - 2)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle W_k=(-1)y^{3}+(-x)y^{2}+(x^2
+ + k\*x)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle F_k=(-1)y^{3}+(-1)y^{2}+(k\*x
+ + 1)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle G_k=y^{3}+(2\*x
+ - 1)y^{2}+(2\*x^2
+ + k\*x
+ - 1)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle H_k=y^{3}+(x
+ + 1)y^{2}+(-x^2
+ + k\*x
+ + 1)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle I_k=(-1)y^{3}+(-x
+ - 1)y^{2}+(-x^2
+ + k\*x
+ + 1)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle J_k=(-1)y^{3}+(-x
+ + 1)y^{2}+(x^2
+ + k\*x
+ - 1)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle L_k=y^{3}+(x
+ - 1)y^{2}+(x^2
+ + k\*x
+ - 1)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(R_k) = m(Q_{k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(S_k) = m(Q_{k
+ - 1}),-\infty \leqslant k \leqslant -5\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -7,\quad m(S_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{-k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(Q_{-k
+ - 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{-k}),-\infty \leqslant k \leqslant -5,\quad m(T_k) = m(R_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(U_k) = m(Q_{k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(U_k) = m(R_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -7,\quad m(U_k) = m(S_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{-k}),-\infty \leqslant k \leqslant -7,\quad m(U_k) = m(T_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(P_{-k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(Q_{-k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(R_{-k}),-\infty \leqslant k \leqslant -5,\quad m(V_k) = m(R_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(S_{-k}),-\infty \leqslant k \leqslant -5,\quad m(V_k) = m(S_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(T_{k}),-\infty \leqslant k \leqslant -5,\quad m(V_k) = m(T_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(U_{-k}),-\infty \leqslant k \leqslant -5,\quad m(V_k) = m(U_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(P_{-k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(Q_{-k
+ - 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(R_{-k}),-\infty \leqslant k \leqslant -5,\quad m(W_k) = m(R_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(S_{-k}),-\infty \leqslant k \leqslant -2,\quad m(W_k) = m(S_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(T_{k}),-\infty \leqslant k \leqslant -2,\quad m(W_k) = m(T_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(U_{-k}),-\infty \leqslant k \leqslant -5,\quad m(W_k) = m(U_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(W_k) = m(V_{k}),-\infty \leqslant k \leqslant -5,\quad m(W_k) = m(V_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(P_{-k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(Q_{-k
+ - 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(R_{-k}),-\infty \leqslant k \leqslant -5,\quad m(F_k) = m(R_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(S_{-k}),-\infty \leqslant k \leqslant -2,\quad m(F_k) = m(S_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(T_{k}),-\infty \leqslant k \leqslant -2,\quad m(F_k) = m(T_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(U_{-k}),-\infty \leqslant k \leqslant -5,\quad m(F_k) = m(U_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(V_{k}),-\infty \leqslant k \leqslant -5,\quad m(F_k) = m(V_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(F_k) = m(W_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(G_k) = m(Q_{k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(G_k) = m(R_{k}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(S_{k}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(S_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(T_{-k}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(T_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(U_{k}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(U_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(V_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(W_{-k}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(W_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(G_k) = m(F_{-k}),-\infty \leqslant k \leqslant -7,\quad m(G_k) = m(F_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(P_{-k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(Q_{-k
+ - 1}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(R_{-k}),-\infty \leqslant k \leqslant -5,\quad m(H_k) = m(R_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(S_{-k}),-\infty \leqslant k \leqslant -3,\quad m(H_k) = m(S_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(T_{k}),-\infty \leqslant k \leqslant -3,\quad m(H_k) = m(T_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(U_{-k}),-\infty \leqslant k \leqslant -5,\quad m(H_k) = m(U_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(V_{k}),-\infty \leqslant k \leqslant -5,\quad m(H_k) = m(V_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(W_{k}),-\infty \leqslant k \leqslant -3,\quad m(H_k) = m(W_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(F_{k}),-\infty \leqslant k \leqslant -3,\quad m(H_k) = m(F_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(H_k) = m(G_{-k}),-\infty \leqslant k \leqslant -5,\quad m(H_k) = m(G_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(I_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(I_k) = m(Q_{k
+ - 1}),-\infty \leqslant k \leqslant -5\)\\
+\(\displaystyle m(I_k) = m(R_{k}),-\infty \leqslant k \leqslant -7,\quad m(I_k) = m(R_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(I_k) = m(S_{k}),-\infty \leqslant k \leqslant -4,\quad m(I_k) = m(S_{k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(I_k) = m(T_{-k}),-\infty \leqslant k \leqslant -4,\quad m(I_k) = m(T_{-k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(I_k) = m(U_{k}),-\infty \leqslant k \leqslant -7,\quad m(I_k) = m(U_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(I_k) = m(V_{-k}),-\infty \leqslant k \leqslant -7,\quad m(I_k) = m(V_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(I_k) = m(W_{-k}),-\infty \leqslant k \leqslant -4,\quad m(I_k) = m(W_{-k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(I_k) = m(F_{-k}),-\infty \leqslant k \leqslant -4,\quad m(I_k) = m(F_{-k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(I_k) = m(G_{k}),-\infty \leqslant k \leqslant -7,\quad m(I_k) = m(G_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(I_k) = m(H_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(J_k) = m(P_{-k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(J_k) = m(Q_{-k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(J_k) = m(R_{-k}),-\infty \leqslant k \leqslant -3,\quad m(J_k) = m(R_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(J_k) = m(S_{-k}),-\infty \leqslant k \leqslant -5,\quad m(J_k) = m(S_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(J_k) = m(T_{k}),-\infty \leqslant k \leqslant -5,\quad m(J_k) = m(T_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(J_k) = m(U_{-k}),-\infty \leqslant k \leqslant -3,\quad m(J_k) = m(U_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(J_k) = m(V_{k}),-\infty \leqslant k \leqslant -5,\quad m(J_k) = m(V_{k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(J_k) = m(W_{k}),-\infty \leqslant k \leqslant -5,\quad m(J_k) = m(W_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(J_k) = m(F_{k}),-\infty \leqslant k \leqslant -5,\quad m(J_k) = m(F_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(J_k) = m(G_{-k}),-\infty \leqslant k \leqslant -5,\quad m(J_k) = m(G_{-k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(J_k) = m(H_{k}),-\infty \leqslant k \leqslant -5,\quad m(J_k) = m(H_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(J_k) = m(I_{-k}),-\infty \leqslant k \leqslant -5,\quad m(J_k) = m(I_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(L_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(L_k) = m(Q_{k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(L_k) = m(R_{k}),-\infty \leqslant k \leqslant -7,\quad m(L_k) = m(R_{k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(L_k) = m(S_{k}),-\infty \leqslant k \leqslant -7,\quad m(L_k) = m(S_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(L_k) = m(T_{-k}),-\infty \leqslant k \leqslant -7,\quad m(L_k) = m(T_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(L_k) = m(U_{k}),-\infty \leqslant k \leqslant -7,\quad m(L_k) = m(U_{k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(L_k) = m(V_{-k}),-\infty \leqslant k \leqslant -3,\quad m(L_k) = m(V_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(L_k) = m(W_{-k}),-\infty \leqslant k \leqslant -7,\quad m(L_k) = m(W_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(L_k) = m(F_{-k}),-\infty \leqslant k \leqslant -7,\quad m(L_k) = m(F_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(L_k) = m(G_{k}),-\infty \leqslant k \leqslant -3,\quad m(L_k) = m(G_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(L_k) = m(H_{-k}),-\infty \leqslant k \leqslant -7,\quad m(L_k) = m(H_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(L_k) = m(I_{k}),-\infty \leqslant k \leqslant -7,\quad m(L_k) = m(I_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(L_k) = m(J_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ + 5\right) \*x^3
+ + \left(-k
+ + 5\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=y^{3}+(x
+ + 2)y^{2}+(x^2
+ + k\*x
+ + 2)y^{}+(x^3
+ + 3\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle R_k=y^{3}+(2\*x
+ + 1)y^{2}+(2\*x^2
+ + k\*x
+ + 1)y^{}+(x^3
+ + 3\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle S_k=y^{3}+(3\*x
+ + 2)y^{2}+(3\*x^2
+ + k\*x
+ + 2)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle T_k=y^{3}+(2\*x
+ + 3)y^{2}+(2\*x^2
+ + k\*x
+ + 3)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle U_k=y^{3}+(3\*x
+ + 1)y^{2}+(3\*x^2
+ + k\*x
+ + 1)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle V_k=y^{3}+(x
+ + 3)y^{2}+(x^2
+ + k\*x
+ + 3)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -10,\quad m(S_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -10,\quad m(S_k) = m(R_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(Q_{k}),-\infty \leqslant k \leqslant -10,\quad m(T_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{k}),-\infty \leqslant k \leqslant -10,\quad m(T_k) = m(R_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(Q_{k}),-\infty \leqslant k \leqslant -6,\quad m(U_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(R_{k}),-\infty \leqslant k \leqslant -6,\quad m(U_k) = m(R_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -10,\quad m(U_k) = m(S_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{k}),-\infty \leqslant k \leqslant -10,\quad m(U_k) = m(T_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(Q_{k}),-\infty \leqslant k \leqslant -6,\quad m(V_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(R_{k}),-\infty \leqslant k \leqslant -6,\quad m(V_k) = m(R_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(S_{k}),-\infty \leqslant k \leqslant -10,\quad m(V_k) = m(S_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(T_{k}),-\infty \leqslant k \leqslant -10,\quad m(V_k) = m(T_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(U_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)^{2}(y^2+x)+(x^5
+ + k\*x^4
+ - k\*x^3
+ - k\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(-1)y^{3}+(k\*x)y^{}+(x^3
+ + 3\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle R_k=(-1)y^{3}+(-3\*x)y^{2}+(-3\*x^2
+ + k\*x)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle S_k=y^{3}+(3)y^{2}+(k\*x
+ + 3)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -9,\quad m(R_k) = m(Q_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{-k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -5,\quad m(S_k) = m(Q_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + 1)(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ + 1\right) \*x^3
+ + \left(-k
+ + 1\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=y^{3}+xy^{2}+(x^2
+ + k\*x)y^{}+(x^3
+ + 3\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle R_k=(-1)y^{3}+y^{2}+(k\*x
+ - 1)y^{}+(x^3
+ + 3\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle S_k=y^{3}+(3\*x)y^{2}+(3\*x^2
+ + k\*x)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle T_k=(-1)y^{3}+(3)y^{2}+(k\*x
+ - 3)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle U_k=(-1)y^{3}+(-3\*x
+ + 1)y^{2}+(-3\*x^2
+ + k\*x
+ - 1)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle V_k=(-1)y^{3}+(-x
+ + 3)y^{2}+(-x^2
+ + k\*x
+ - 3)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -6,\quad m(S_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant -6,\quad m(S_k) = m(R_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(P_{-k
+ - 1}),-\infty \leqslant k \leqslant -7\)\\
+\(\displaystyle m(T_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -7,\quad m(T_k) = m(Q_{-k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(R_{k}),-\infty \leqslant k \leqslant -7,\quad m(T_k) = m(R_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(T_k) = m(S_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(Q_{k}),-\infty \leqslant k \leqslant -11,\quad m(U_k) = m(Q_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(R_{-k}),-\infty \leqslant k \leqslant -11,\quad m(U_k) = m(R_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(S_{k}),-\infty \leqslant k \leqslant -11,\quad m(U_k) = m(S_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(U_k) = m(T_{-k}),-\infty \leqslant k \leqslant -11,\quad m(U_k) = m(T_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(Q_{k}),-\infty \leqslant k \leqslant -11,\quad m(V_k) = m(Q_{k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(R_{-k}),-\infty \leqslant k \leqslant -11,\quad m(V_k) = m(R_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(S_{k}),-\infty \leqslant k \leqslant -11,\quad m(V_k) = m(S_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(T_{-k}),-\infty \leqslant k \leqslant -11,\quad m(V_k) = m(T_{-k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(V_k) = m(U_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)^{2}(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ - 5\right) \*x^3
+ + \left(-k
+ - 5\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(-1)y^{3}+(-x
+ + 1)y^{2}+(-x^2
+ + k\*x
+ - 1)y^{}+(-x^3
+ - x^2
+ + x
+ + 1)\)\\
+\(\displaystyle R_k=(-1)y^{3}+(-x
+ + 1)y^{2}+(x^2
+ + k\*x
+ - 1)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle S_k=y^{3}+(x
+ - 1)y^{2}+(x^2
+ + k\*x
+ - 1)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -6\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 1}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -3,\quad m(R_k) = m(Q_{-k}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -6\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -5,\quad m(S_k) = m(Q_{k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)^{2}(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ + 3\right) \*x^3
+ + \left(-k
+ + 3\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=y^{3}+(x
+ + 1)y^{2}+(x^2
+ + k\*x
+ + 1)y^{}+(x^3
+ + 3\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle R_k=y^{3}+(3\*x
+ + 1)y^{2}+(3\*x^2
+ + k\*x
+ + 1)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle S_k=y^{3}+(x
+ + 3)y^{2}+(x^2
+ + k\*x
+ + 3)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -9,\quad m(R_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),-\infty \leqslant k \leqslant -9,\quad m(S_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(y^2+x^5)+(x^5
+ + k\*x^4
+ + \left(-k
+ - 2\right) \*x^3
+ + \left(-k
+ - 2\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=xy^{2}+(x^2
+ + k\*x
+ - 1)y^{}+(-x^2
+ + x)\)\\
+\(\displaystyle R_k=(-x)y^{2}+(x^2
+ + k\*x
+ + 1)y^{}+(-x^2
+ + x)\)\\
+\(\displaystyle S_k=(-x)y^{2}+(x^2
+ + k\*x)y^{}+(-x^2
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ - 1}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 1}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -3,\quad m(R_k) = m(Q_{k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -2\)\\
+\(\displaystyle m(S_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -3,\quad m(S_k) = m(Q_{-k}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant -3,\quad m(S_k) = m(R_{-k}),3 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(y^2+x^5)+(x^5
+ + k\*x^4
+ - k\*x^3
+ - k\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=xy^{2}+(x^2
+ + k\*x
+ + 1)y^{}+(-x^2
+ + x)\)\\
+\(\displaystyle R_k=xy^{2}+(-x^2
+ + k\*x)y^{}+(x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ - 1}),-\infty \leqslant k \leqslant -3\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 1}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -4,\quad m(R_k) = m(Q_{k}),6 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(y^2+x^6)+(x^6
+ + k\*x^5
+ - x^4
+ + \left(-2\*k
+ + 2\right) \*x^3
+ - x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=xy^{2}+(k\*x
+ - 1)y^{}+(-x^2
+ + x)\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),2 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)(y^2+x^3)+(x^5
+ + k\*x^4
+ + \left(-k
+ - 4\right) \*x^3
+ + \left(-k
+ - 4\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(-x)y^{2}+(-x^2
+ + k\*x
+ + 1)y^{}+(-x^3
+ - x^2
+ + x
+ + 1)\)\\
+\(\displaystyle R_k=(-x)y^{2}+(-2\*x^2
+ + k\*x
+ + 1)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle S_k=(-x)y^{2}+(k\*x
+ + 1)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ - 1}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 1}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -4,\quad m(R_k) = m(Q_{k}),2 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -6\)\\
+\(\displaystyle m(S_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -6,\quad m(S_k) = m(Q_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant -6,\quad m(S_k) = m(R_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(y^2+x^3)+(x^5
+ + k\*x^4
+ + \left(-k
+ - 2\right) \*x^3
+ + \left(-k
+ - 2\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(-x)y^{2}+(-x^2
+ + k\*x
+ - 1)y^{}+(-x^3
+ - x^2
+ + x
+ + 1)\)\\
+\(\displaystyle R_k=xy^{2}+(k\*x
+ - 1)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle S_k=xy^{2}+(2\*x^2
+ + k\*x
+ - 1)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -3\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -3\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -3,\quad m(R_k) = m(Q_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{-k
+ - 1}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -8,\quad m(S_k) = m(Q_{-k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant -8,\quad m(S_k) = m(R_{-k}),6 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)(y^2+x^3)+(x^5
+ + k\*x^4
+ + \left(-k
+ + 2\right) \*x^3
+ + \left(-k
+ + 2\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=xy^{2}+(x^2
+ + k\*x
+ + 1)y^{}+(x^3
+ + 3\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle R_k=xy^{2}+(2\*x^2
+ + k\*x
+ + 1)y^{}+(x^3
+ + 2\*x^2
+ + 2\*x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 1}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 1}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -11,\quad m(R_k) = m(Q_{k}),7 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(y^2+x^3)+(x^5
+ + k\*x^4
+ - k\*x^3
+ - k\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=xy^{2}+(x^2
+ + k\*x
+ - 1)y^{}+(x^3
+ + 3\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle R_k=(-x)y^{2}+(-2\*x^2
+ + k\*x
+ - 1)y^{}+(-x^3
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ - 1}),-\infty \leqslant k \leqslant -9\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 1}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -9,\quad m(R_k) = m(Q_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(y^2+x^3)+(x^5
+ + k\*x^4
+ + \left(-k
+ - 3\right) \*x^3
+ + \left(-k
+ - 3\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(-x)y^{2}+(k\*x
+ + 1)y^{}+(-x^3
+ - x^2
+ + x
+ + 1)\)\\
+\(\displaystyle R_k=xy^{2}+(2\*x^2
+ + k\*x
+ - 1)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle S_k=(-x)y^{2}+(k\*x
+ + 1)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ - 1}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 1}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -6,\quad m(R_k) = m(Q_{k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 1}),-\infty \leqslant k \leqslant -4\)\\
+\(\displaystyle m(S_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -4,\quad m(S_k) = m(Q_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),-\infty \leqslant k \leqslant -4,\quad m(S_k) = m(R_{-k}),6 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(y^2+x^3)+(x^5
+ + k\*x^4
+ + \left(-k
+ + 1\right) \*x^3
+ + \left(-k
+ + 1\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=xy^{2}+(k\*x
+ - 1)y^{}+(x^3
+ + 3\*x^2
+ + 3\*x
+ + 1)\)\\
+\(\displaystyle R_k=xy^{2}+(2\*x^2
+ + k\*x
+ + 1)y^{}+(x^3
+ + x^2
+ + x
+ + 1)\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ - 1}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 1}),4 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),-\infty \leqslant k \leqslant -10,\quad m(R_k) = m(Q_{-k}),8 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ + 2\*x^4
+ + \left(-2\*k
+ + 12\right) \*x^3
+ + 2\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(k\*x^3
+ + \left(-2\*k
+ + 10\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),10 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^4
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 2\*x^4
+ + \left(-2\*k
+ + 8\right) \*x^3
+ - 2\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ + 1)(y^2+1)+(k\*x^3
+ + \left(-2\*k
+ + 4\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),9 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^4
+ - x^2
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 2\*x^4
+ + \left(-2\*k
+ + 4\right) \*x^3
+ - 2\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ - x^2
+ + 1)(y^2+1)+(k\*x^3
+ + \left(-2\*k
+ + 2\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),9 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^6
+ + k\*x^5
+ + 6\*x^4
+ + \left(-2\*k
+ + 20\right) \*x^3
+ + 6\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ + 10\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle R_k=(x^2
+ + x
+ + 1)^{2}(y^2+1)+(k\*x^3
+ + \left(-2\*k
+ + 18\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k
+ - 2}),12 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)^{3}(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 2\*x^4
+ + \left(-2\*k
+ + 16\right) \*x^3
+ - 2\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)^{2}(y^2+1)+(k\*x^3
+ + \left(-2\*k
+ + 8\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),10 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 2\*x^4
+ + \left(-2\*k
+ + 12\right) \*x^3
+ - 2\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ - 14\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle R_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(2\*k
+ + 2\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle S_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(k\*x^3
+ + \left(-2\*k
+ + 6\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ - 2}),-\infty \leqslant k \leqslant -14\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ + 2}),-\infty \leqslant k \leqslant -8\)\\
+\(\displaystyle m(R_k) = m(Q_{k
+ - 4}),-\infty \leqslant k \leqslant -10\)\\
+\(\displaystyle m(S_k) = m(P_{k}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{-k
+ - 2}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k
+ + 2}),8 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)^{2}(x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ + 2\*x^4
+ + \left(-2\*k
+ + 16\right) \*x^3
+ + 2\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)^{2}(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ + 6\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle R_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(k\*x^3
+ + \left(-2\*k
+ + 12\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k}),10 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k
+ - 2}),10 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)^{3}(y^2+1)+(x^6
+ + k\*x^5
+ + 12\*x^4
+ + \left(-2\*k
+ + 28\right) \*x^3
+ + 12\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x
+ + 1)^{2}(x^2
+ - x
+ + 1)(y^2+1)+(2\*x^4
+ + k\*x^3
+ + \left(-2\*k
+ + 4\right) \*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle R_k=(x^2
+ + 1)^{2}(y^2+1)+(2\*x^4
+ + k\*x^3
+ + \left(-2\*k
+ + 4\right) \*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle S_k=(x
+ + 1)^{4}(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ - 34\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle T_k=(x
+ + 1)^{2}(x^2
+ + 1)(y^2+1)+(k\*x^3
+ + \left(-2\*k
+ + 16\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 4}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle \)\\
+\(\displaystyle m(S_k) = m(P_{-k
+ - 2}),-\infty \leqslant k \leqslant -20,\quad \)\\
+\(\displaystyle m(S_k) = m(Q_{-k
+ - 6}),-\infty \leqslant k \leqslant -20\)\\
+\(\displaystyle \)\\
+\(\displaystyle m(T_k) = m(R_{k
+ - 4}),12 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 6\*x^4
+ + \left(-2\*k
+ - 12\right) \*x^3
+ - 6\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ - x^3
+ + x^2
+ - x
+ + 1)(y^2+1)+(k\*x^3
+ + \left(-2\*k
+ + 2\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),11 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 10\*x^4
+ + \left(-2\*k
+ - 20\right) \*x^3
+ - 10\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(2\*k
+ - 6\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle R_k=(x^2
+ - x
+ + 1)^{2}(y^2+1)+(k\*x^3
+ + \left(-2\*k
+ + 2\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ + 2}),15 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k}),13 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k
+ + 2}),8 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)^{2}(x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 6\*x^4
+ + \left(-2\*k
+ - 16\right) \*x^3
+ - 6\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)(x^4
+ - x^2
+ + 1)(y^2+1)+(x^6
+ + k\*x^5
+ + \left(-2\*k
+ + 4\right) \*x^3
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle R_k=(x^2
+ + 1)^{2}(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ - 10\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle S_k=(x^2
+ - x
+ + 1)(x^2
+ + 1)(y^2+1)+(k\*x^3
+ + \left(-2\*k
+ + 4\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ + 2}),-\infty \leqslant k \leqslant -13\)\\
+\(\displaystyle m(R_k) = m(Q_{-k
+ - 2}),-\infty \leqslant k \leqslant -12\)\\
+\(\displaystyle m(S_k) = m(P_{-k}),11 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(Q_{k}),6 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k
+ - 2}),10 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 9\*x^4
+ + \left(-2\*k
+ - 16\right) \*x^3
+ - 9\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(2\*k
+ - 4\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ + 2}),15 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 3\*x^4
+ + \left(-2\*k
+ - 8\right) \*x^3
+ - 3\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + 2\*k\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -7\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)^{3}(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 15\*x^4
+ + \left(-2\*k
+ - 28\right) \*x^3
+ - 15\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)^{2}(y^2+1)+(x^4
+ + k\*x^3
+ + \left(2\*k
+ - 4\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ + 2}),17 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 5\*x^4
+ + \left(-2\*k
+ - 12\right) \*x^3
+ - 5\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ - 8\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle R_k=(x^2
+ + x
+ + 1)^{2}(y^2+1)+(x^4
+ + k\*x^3
+ + 2\*k\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),-\infty \leqslant k \leqslant -13\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -9\)\\
+\(\displaystyle m(R_k) = m(Q_{k
+ - 4}),-\infty \leqslant k \leqslant -8\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ - x^4
+ + \left(-2\*k
+ + 8\right) \*x^3
+ - x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ - 12\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k
+ - 2}),-\infty \leqslant k \leqslant -14\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ + 5\*x^4
+ + \left(-2\*k
+ + 16\right) \*x^3
+ + 5\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ + 8\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),6 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)(x^4
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 4\*x^4
+ + \left(-2\*k
+ - 8\right) \*x^3
+ - 4\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ - 6\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),-\infty \leqslant k \leqslant -13\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)(x^4
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ + \left(-2\*k
+ + 8\right) \*x^3
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ + 2\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),6 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)(x^4
+ - x^2
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 3\*x^4
+ + \left(-2\*k
+ - 4\right) \*x^3
+ - 3\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ - x^2
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ - 4\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),-\infty \leqslant k \leqslant -13\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)(x^4
+ - x^2
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ - x^4
+ + \left(-2\*k
+ + 4\right) \*x^3
+ - x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ - x^2
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ - 2\*k\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),5 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^6
+ + k\*x^5
+ + x^4
+ + \left(-2\*k
+ + 12\right) \*x^3
+ + x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ + 4\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle R_k=(x^2
+ + x
+ + 1)^{2}(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ - 20\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),7 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 2}),-\infty \leqslant k \leqslant -16,\quad \)\\
+\(\displaystyle m(R_k) = m(Q_{-k
+ - 4}),-\infty \leqslant k \leqslant -16,\quad \)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)^{3}(y^2+1)+(2\*x^6
+ + k\*x^5
+ + 11\*x^4
+ + \left(-2\*k
+ + 28\right) \*x^3
+ + 11\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)^{2}(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ + 16\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),8 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)^{2}(x^2
+ + x
+ + 1)(y^2+1)+(x^6
+ + k\*x^5
+ + 3\*x^4
+ + \left(-2\*k
+ + 16\right) \*x^3
+ + 3\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(k\*x^5
+ + 8\*x^4
+ + \left(-2\*k
+ + 20\right) \*x^3
+ + 8\*x^2
+ + k\*x)y\)\\
+\(\displaystyle R_k=(x^4
+ - x^2
+ + 1)(y^2+1)+(2\*x^4
+ + k\*x^3
+ + \left(-2\*k
+ - 2\right) \*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle S_k=(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^4
+ + k\*x^3
+ + \left(2\*k
+ - 2\right) \*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle U_k=(x
+ + 1)^{2}(x^2
+ - x
+ + 1)(y^2+1)+(x^4
+ + k\*x^3
+ + \left(-2\*k
+ - 10\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ + 4}),3 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{k
+ + 4}),5 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle \)\\
+\(\displaystyle m(U_k) = m(S_{k
+ + 6}),-\infty \leqslant k \leqslant -14\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^4
+ - x^2
+ + 1)(y^2+1)+(k\*x^5
+ + \left(-2\*k
+ + 4\right) \*x^3
+ + k\*x)y\)\\
+\(\displaystyle R_k=(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^4
+ + k\*x^3
+ + \left(-2\*k
+ - 22\right) \*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle S_k=(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^4
+ + k\*x^3
+ + \left(2\*k
+ - 6\right) \*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle \)\\
+\(\displaystyle m(R_k) = m(P_{-k
+ - 4}),-\infty \leqslant k \leqslant -20,\quad \)\\
+\(\displaystyle \)\\
+\(\displaystyle m(S_k) = m(P_{k
+ - 4}),12 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(S_k) = m(R_{-k}),20 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)^{2}(x^2
+ + x
+ + 1)(y^2+1)+(x^6
+ + k\*x^5
+ - 5\*x^4
+ + \left(-2\*k
+ - 16\right) \*x^3
+ - 5\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(k\*x^5
+ + \left(-2\*k
+ + 12\right) \*x^3
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle \)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(x^6
+ + k\*x^5
+ - 4\*x^4
+ + \left(-2\*k
+ - 12\right) \*x^3
+ - 4\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle T_k=(x
+ + 1)^{2}(x^2
+ + x
+ + 1)(y^2+1)+(2\*x^4
+ + k\*x^3
+ + \left(-2\*k
+ - 28\right) \*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle m(T_k) = m(P_{k
+ + 4}),-\infty \leqslant k \leqslant -22,\quad \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)(x^4
+ - x^2
+ + 1)(y^2+1)+(2\*x^8
+ + k\*x^6
+ + \left(-2\*k
+ - 10\right) \*x^4
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)^{2}(x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + 2\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 32\right) \*x^3
+ + k\*x^2
+ + 2\*x
+ + 2)y\)\\
+\(\displaystyle R_k=(x^2
+ + 1)^{2}(x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + 2\*x^5
+ + k\*x^4
+ + \left(2\*k
+ + 8\right) \*x^3
+ + k\*x^2
+ + 2\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 6}),-\infty \leqslant k \leqslant -58,\quad \)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant -26\)\\
+\(\displaystyle m(R_k) = m(Q_{k
+ - 8}),-\infty \leqslant k \leqslant -50\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)^{2}(x^4
+ - x^2
+ + 1)(y^2+1)+(2\*x^8
+ + 4\*x^7
+ + k\*x^6
+ + \left(-2\*k
+ + 6\right) \*x^4
+ + k\*x^2
+ + 4\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)^{2}(x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + 2\*x^5
+ + k\*x^4
+ + \left(2\*k
+ - 8\right) \*x^3
+ + k\*x^2
+ + 2\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 2}),-\infty \leqslant k \leqslant 5,\quad m(Q_k) = m(P_{k
+ - 2}),7 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^4
+ + \left(-2\*k
+ - 16\right) \*x^3
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^6
+ + 4\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 48\right) \*x^3
+ + k\*x^2
+ + 4\*x
+ + 2)y\)\\
+\(\displaystyle R_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^6
+ + 4\*x^5
+ + k\*x^4
+ + 2\*k\*x^3
+ + k\*x^2
+ + 4\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 8}),-\infty \leqslant k \leqslant -76\)\\
+\(\displaystyle m(R_k) = m(P_{k
+ - 8}),-\infty \leqslant k \leqslant -32\)\\
+\(\displaystyle m(R_k) = m(Q_{k
+ - 16}),-\infty \leqslant k \leqslant -60,\quad \)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^6
+ + 2\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 26\right) \*x^3
+ + k\*x^2
+ + 2\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)^{3}(y^2+1)+(2\*x^6
+ + 6\*x^5
+ + k\*x^4
+ + \left(2\*k
+ - 6\right) \*x^3
+ + k\*x^2
+ + 6\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 16}),-\infty \leqslant k \leqslant -40\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)^{3}(y^2+1)+(2\*x^6
+ + 6\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 70\right) \*x^3
+ + k\*x^2
+ + 6\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^6
+ + 2\*x^5
+ + k\*x^4
+ + \left(2\*k
+ + 6\right) \*x^3
+ + k\*x^2
+ + 2\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 16}),-\infty \leqslant k \leqslant -80\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + 2\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 28\right) \*x^3
+ + k\*x^2
+ + 2\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + 2\*x^5
+ + k\*x^4
+ + \left(2\*k
+ + 4\right) \*x^3
+ + k\*x^2
+ + 2\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 8}),-\infty \leqslant k \leqslant -48\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^4
+ + \left(-2\*k
+ - 14\right) \*x^3
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + 4\*x^5
+ + k\*x^4
+ + \left(2\*k
+ - 2\right) \*x^3
+ + k\*x^2
+ + 4\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 8}),-\infty \leqslant k \leqslant -30\)\\
+\hline
+\(\displaystyle P_k=(x^8
+ - x^7
+ + x^5
+ - x^4
+ + x^3
+ - x
+ + 1)(y^2+1)+(2\*x^8
+ - 2\*x^7
+ + k\*x^6
+ + 2\*x^5
+ + \left(-2\*k
+ - 2\right) \*x^4
+ + 2\*x^3
+ + k\*x^2
+ - 2\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + 4\*x^5
+ + k\*x^4
+ + \left(2\*k
+ - 6\right) \*x^3
+ + k\*x^2
+ + 4\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 6}),-\infty \leqslant k \leqslant 5,\quad m(Q_k) = m(P_{k
+ - 6}),7 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + 4\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 42\right) \*x^3
+ + k\*x^2
+ + 4\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^4
+ + \left(2\*k
+ + 10\right) \*x^3
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ - 8}),-\infty \leqslant k \leqslant -66\)\\
+\hline
+\(\displaystyle 
+\red{
+P_k=(x^2
+ + x
+ + 1)(x^6
+ + x^3
+ + 1)(y^2+1)+(2\*x^8
+ + 2\*x^7
+ + k\*x^6
+ + 2\*x^5
+ + \left(-2\*k
+ + 6\right) \*x^4
+ + 2\*x^3
+ + k\*x^2
+ + 2\*x
+ + 2)y
+ }
+ \)\\
+\(\displaystyle Q_k=(x^6
+ + x^3
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^4
+ + \left(2\*k
+ + 2\right) \*x^3
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),1 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)^{2}(x^4
+ - x^2
+ + 1)(y^2+1)+(2\*x^8
+ + k\*x^6
+ + \left(-2\*k
+ - 12\right) \*x^4
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle R_k=(x^2
+ - x
+ + 1)(x^2
+ + 1)^{2}(x^2
+ + x
+ + 1)(y^2+1)+(2\*x^8
+ + k\*x^6
+ + \left(-2\*k
+ - 28\right) \*x^4
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle S_k=(x^2
+ + 1)^{2}(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^8
+ + 4\*x^7
+ + k\*x^6
+ - 20\*x^5
+ + \left(-2\*k
+ - 44\right) \*x^4
+ - 20\*x^3
+ + k\*x^2
+ + 4\*x
+ + 2)y\)\\
+\(\displaystyle T_k=(x^2
+ + 1)^{4}(y^2+1)+(2\*x^8
+ + k\*x^6
+ + \left(-2\*k
+ - 36\right) \*x^4
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle U_k=(x
+ + 1)^{2}(x^2
+ - x
+ + 1)^{2}(y^2+1)+(2\*x^6
+ + k\*x^4
+ + \left(-2\*k
+ - 12\right) \*x^3
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle V_k=(x
+ + 1)^{2}(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^6
+ + 8\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 92\right) \*x^3
+ + k\*x^2
+ + 8\*x
+ + 2)y\)\\
+\(\displaystyle F_k=(x
+ + 1)^{6}(y^2+1)+(2\*x^6
+ + 12\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 156\right) \*x^3
+ + k\*x^2
+ + 12\*x
+ + 2)y\)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle m(S_k) = m(R_{k}),-\infty \leqslant k \leqslant -42\)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle m(U_k) = m(P_{k
+ + 2}),-\infty \leqslant k \leqslant -36\)\\
+\(\displaystyle m(V_k) = m(P_{k
+ + 18}),-\infty \leqslant k \leqslant -116\)\\
+\(\displaystyle m(V_k) = m(U_{k
+ + 16}),-\infty \leqslant k \leqslant -116,\quad \)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle m(F_k) = m(T_{k
+ + 26}),-\infty \leqslant k \leqslant -162\)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\hline
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\hline
+\(\displaystyle S_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)^{3}(y^2+1)+(2\*x^8
+ + 4\*x^7
+ + k\*x^6
+ - 16\*x^5
+ + \left(-2\*k
+ - 34\right) \*x^4
+ - 16\*x^3
+ + k\*x^2
+ + 4\*x
+ + 2)y\)\\
+\(\displaystyle T_k=(x
+ + 1)^{2}(x^2
+ - x
+ + 1)(x^2
+ + 1)(y^2+1)+(2\*x^6
+ + 2\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 24\right) \*x^3
+ + k\*x^2
+ + 2\*x
+ + 2)y\)\\
+\(\displaystyle U_k=(x
+ + 1)^{2}(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + 6\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 64\right) \*x^3
+ + k\*x^2
+ + 6\*x
+ + 2)y\)\\
+\(\displaystyle V_k=(x
+ + 1)^{4}(x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + 10\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 120\right) \*x^3
+ + k\*x^2
+ + 10\*x
+ + 2)y\)\\
+\(\displaystyle \)\\
+\(\displaystyle \)\\
+\(\displaystyle m(U_k) = m(T_{k
+ + 8}),-\infty \leqslant k \leqslant -94\)\\
+\(\displaystyle m(V_k) = m(S_{k
+ + 22}),-\infty \leqslant k \leqslant -138\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)^{4}(y^2+1)+(2\*x^8
+ + 8\*x^7
+ + k\*x^6
+ + 32\*x^5
+ + \left(-2\*k
+ + 78\right) \*x^4
+ + 32\*x^3
+ + k\*x^2
+ + 8\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x
+ + 1)^{4}(x^2
+ - x
+ + 1)(y^2+1)+(2\*x^6
+ + 6\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ + 16\right) \*x^3
+ + k\*x^2
+ + 6\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 14}),7 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^4
+ + 1)^{2}(y^2+1)+(2\*x^8
+ + k\*x^6
+ + \left(-2\*k
+ - 12\right) \*x^4
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)^{3}(y^2+1)+(2\*x^6
+ + k\*x^4
+ + \left(-2\*k
+ - 20\right) \*x^3
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),-\infty \leqslant k \leqslant -42\)\\
+\hline
+\(\displaystyle Q_k=(x
+ + 1)^{2}(x^4
+ - x^3
+ + x^2
+ - x
+ + 1)(y^2+1)+(2\*x^6
+ + 2\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 16\right) \*x^3
+ + k\*x^2
+ + 2\*x
+ + 2)y\)\\
+\(\displaystyle R_k=(x
+ + 1)^{2}(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^6
+ + 6\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 56\right) \*x^3
+ + k\*x^2
+ + 6\*x
+ + 2)y\)\\
+\(\displaystyle m(R_k) = m(Q_{k
+ + 8}),-\infty \leqslant k \leqslant -92\)\\
+\hline
+\(\displaystyle \red{P_k=(x^2
+ + 1)^{2}(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^8
+ + 4\*x^7
+ + k\*x^6
+ + 12\*x^5
+ + \left(-2\*k
+ + 36\right) \*x^4
+ + 12\*x^3
+ + k\*x^2
+ + 4\*x
+ + 2)y}\)\\
+\(\displaystyle Q_k=(x
+ + 1)^{2}(x^4
+ - x^2
+ + 1)(y^2+1)+(2\*x^6
+ + 4\*x^5
+ + k\*x^4
+ + \left(-2\*k
+ - 4\right) \*x^3
+ + k\*x^2
+ + 4\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 10}),1 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^8
+ + 4\*x^7
+ + k\*x^6
+ + 8\*x^5
+ + \left(-2\*k
+ + 22\right) \*x^4
+ + 8\*x^3
+ + k\*x^2
+ + 4\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x
+ + 1)^{2}(x^4
+ - x^3
+ + x^2
+ - x
+ + 1)(y^2+1)+(2\*x^6
+ + 2\*x^5
+ + k\*x^4
+ - 2\*k\*x^3
+ + k\*x^2
+ + 2\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 6}),1 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^6
+ + x^3
+ + 1)(y^2+1)+(2\*x^8
+ - 2\*x^7
+ + k\*x^6
+ + 2\*x^5
+ + \left(-2\*k
+ - 10\right) \*x^4
+ + 2\*x^3
+ + k\*x^2
+ - 2\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^6
+ + x^3
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^4
+ + \left(-2\*k
+ - 10\right) \*x^3
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k
+ + 2}),-\infty \leqslant k \leqslant -36,\quad \)\\
+\hline
+\(\displaystyle P_k=(x^4
+ - x^3
+ + x^2
+ - x
+ + 1)(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ - 2\right) \*x^3
+ + \left(-k
+ - 2\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+x)+(x^5
+ + k\*x^4
+ + \left(-k
+ - 6\right) \*x^3
+ + \left(-k
+ - 6\right) \*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),-\infty \leqslant k \leqslant -8\)\\
+\hline
+\(\displaystyle P_k=(x^4
+ + 1)(y^2+x^2)+(x^6
+ + k\*x^5
+ - x^4
+ + \left(-2\*k
+ + 4\right) \*x^3
+ - x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^4
+ + 1)(y^2+x)+(k\*x^4
+ + \left(-k
+ + 2\right) \*x^3
+ + \left(-k
+ + 2\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),4 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+x^2)+(x^6
+ + k\*x^5
+ + x^4
+ + \left(-2\*k
+ + 6\right) \*x^3
+ + x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+x)+(k\*x^4
+ + \left(-k
+ + 5\right) \*x^3
+ + \left(-k
+ + 5\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),5 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+x^2)+(x^6
+ + k\*x^5
+ - 3\*x^4
+ + \left(-2\*k
+ - 6\right) \*x^3
+ - 3\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^4
+ - x^3
+ + x^2
+ - x
+ + 1)(y^2+x)+(k\*x^4
+ + \left(-k
+ + 1\right) \*x^3
+ + \left(-k
+ + 1\right) \*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),4 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(x^6
+ + k\*x^5
+ + 3\*x^4
+ + \left(-2\*k
+ + 12\right) \*x^3
+ + 3\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(k\*x^5
+ + 7\*x^4
+ + \left(-2\*k
+ + 16\right) \*x^3
+ + 7\*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),9 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(x^6
+ + k\*x^5
+ - 5\*x^4
+ + \left(-2\*k
+ - 12\right) \*x^3
+ - 5\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(k\*x^5
+ + x^4
+ + \left(-2\*k
+ + 8\right) \*x^3
+ + x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^4
+ + 1)(y^2+1)+(x^6
+ + k\*x^5
+ - x^4
+ + \left(-2\*k
+ + 8\right) \*x^3
+ - x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)(x^4
+ + 1)(y^2+1)+(k\*x^5
+ + 2\*x^4
+ + \left(-2\*k
+ + 8\right) \*x^3
+ + 2\*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),7 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^4
+ - x^2
+ + 1)(y^2+1)+(x^6
+ + k\*x^5
+ - x^4
+ + \left(-2\*k
+ + 4\right) \*x^3
+ - x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)(x^4
+ - x^2
+ + 1)(y^2+1)+(k\*x^5
+ + x^4
+ + \left(-2\*k
+ + 4\right) \*x^3
+ + x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),7 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)^{3}(y^2+1)+(x^6
+ + k\*x^5
+ - x^4
+ + \left(-2\*k
+ + 16\right) \*x^3
+ - x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)^{2}(x^2
+ + x
+ + 1)(y^2+1)+(k\*x^5
+ + 4\*x^4
+ + \left(-2\*k
+ + 16\right) \*x^3
+ + 4\*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),8 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + 1)(x^2
+ + x
+ + 1)(y^2+1)+(x^6
+ + k\*x^5
+ - x^4
+ + \left(-2\*k
+ + 12\right) \*x^3
+ - x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(x^6
+ + k\*x^5
+ - 9\*x^4
+ + \left(-2\*k
+ - 20\right) \*x^3
+ - 9\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle R_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(k\*x^5
+ + 3\*x^4
+ + \left(-2\*k
+ + 12\right) \*x^3
+ + 3\*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),-\infty \leqslant k \leqslant -11\)\\
+\(\displaystyle m(R_k) = m(P_{k}),8 \leqslant k \leqslant +\infty\)\\
+\(\displaystyle m(R_k) = m(Q_{-k}),11 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(x^6
+ + k\*x^5
+ + 7\*x^4
+ + \left(-2\*k
+ + 20\right) \*x^3
+ + 7\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)^{3}(y^2+1)+(k\*x^5
+ + 13\*x^4
+ + \left(-2\*k
+ + 28\right) \*x^3
+ + 13\*x^2
+ + k\*x)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),11 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^6
+ + x^3
+ + 1)(y^2+1)+(2\*x^6
+ + k\*x^5
+ - 3\*x^4
+ + \left(-2\*k
+ - 4\right) \*x^3
+ - 3\*x^2
+ + k\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^6
+ + x^3
+ + 1)(y^2+1)+(x^6
+ + k\*x^5
+ + \left(-2\*k
+ + 4\right) \*x^3
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),9 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(x^6
+ + k\*x^5
+ + \left(-2\*k
+ + 8\right) \*x^3
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(x^6
+ + k\*x^5
+ - 8\*x^4
+ + \left(-2\*k
+ - 16\right) \*x^3
+ - 8\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),-\infty \leqslant k \leqslant -11\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ + x
+ + 1)^{3}(y^2+1)+(x^6
+ + k\*x^5
+ - 14\*x^4
+ + \left(-2\*k
+ - 28\right) \*x^3
+ - 14\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(x^6
+ + k\*x^5
+ + 2\*x^4
+ + \left(-2\*k
+ + 12\right) \*x^3
+ + 2\*x^2
+ + k\*x
+ + 1)y\)\\
+\(\displaystyle m(Q_k) = m(P_{-k}),13 \leqslant k \leqslant +\infty\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + 1)(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^8
+ + 2\*x^7
+ + k\*x^6
+ - 8\*x^5
+ + \left(-2\*k
+ - 28\right) \*x^4
+ - 8\*x^3
+ + k\*x^2
+ + 2\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)^{3}(y^2+1)+(2\*x^8
+ + 6\*x^7
+ + k\*x^6
+ - 32\*x^5
+ + \left(-2\*k
+ - 60\right) \*x^4
+ - 32\*x^3
+ + k\*x^2
+ + 6\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),-\infty \leqslant k \leqslant -54\)\\
+\hline
+\(\displaystyle P_k=(x^4
+ - x^2
+ + 1)^{2}(y^2+1)+(2\*x^8
+ + k\*x^6
+ + \left(-2\*k
+ - 6\right) \*x^4
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)^{2}(x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^8
+ + k\*x^6
+ + \left(-2\*k
+ - 22\right) \*x^4
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle R_k=(x^2
+ + x
+ + 1)^{4}(y^2+1)+(2\*x^8
+ + 8\*x^7
+ + k\*x^6
+ - 48\*x^5
+ + \left(-2\*k
+ - 86\right) \*x^4
+ - 48\*x^3
+ + k\*x^2
+ + 8\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),-\infty \leqslant k \leqslant -20\)\\
+\(\displaystyle m(R_k) = m(P_{k}),-\infty \leqslant k \leqslant -68,\quad \)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -68\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)(x^2
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^8
+ + k\*x^6
+ - 2\*x^5
+ + \left(-2\*k
+ - 20\right) \*x^4
+ - 2\*x^3
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + 1)(x^2
+ + x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^8
+ + 4\*x^7
+ + k\*x^6
+ - 18\*x^5
+ + \left(-2\*k
+ - 36\right) \*x^4
+ - 18\*x^3
+ + k\*x^2
+ + 4\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),-\infty \leqslant k \leqslant -40\)\\
+\hline
+\(\displaystyle P_k=(x^2
+ - x
+ + 1)^{2}(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^8
+ - 2\*x^7
+ + k\*x^6
+ + 4\*x^5
+ + \left(-2\*k
+ - 18\right) \*x^4
+ + 4\*x^3
+ + k\*x^2
+ - 2\*x
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ + x
+ + 1)^{2}(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^8
+ + 6\*x^7
+ + k\*x^6
+ - 28\*x^5
+ + \left(-2\*k
+ - 50\right) \*x^4
+ - 28\*x^3
+ + k\*x^2
+ + 6\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),-\infty \leqslant k \leqslant -52\)\\
+\hline
+\(\displaystyle P_k=(x^4
+ - x^2
+ + 1)(x^4
+ + 1)(y^2+1)+(2\*x^8
+ + k\*x^6
+ + \left(-2\*k
+ - 8\right) \*x^4
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^2
+ - x
+ + 1)(x^2
+ + x
+ + 1)(x^4
+ + 1)(y^2+1)+(2\*x^8
+ + k\*x^6
+ + \left(-2\*k
+ - 16\right) \*x^4
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),-\infty \leqslant k \leqslant -18\)\\
+\hline
+\(\displaystyle P_k=(x^8
+ - x^6
+ + x^4
+ - x^2
+ + 1)(y^2+1)+(2\*x^8
+ + k\*x^6
+ + \left(-2\*k
+ - 6\right) \*x^4
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle Q_k=(x^4
+ - x^3
+ + x^2
+ - x
+ + 1)(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)(y^2+1)+(2\*x^8
+ + k\*x^6
+ + \left(-2\*k
+ - 14\right) \*x^4
+ + k\*x^2
+ + 2)y\)\\
+\(\displaystyle R_k=(x^4
+ + x^3
+ + x^2
+ + x
+ + 1)^{2}(y^2+1)+(2\*x^8
+ + 4\*x^7
+ + k\*x^6
+ - 16\*x^5
+ + \left(-2\*k
+ - 30\right) \*x^4
+ - 16\*x^3
+ + k\*x^2
+ + 4\*x
+ + 2)y\)\\
+\(\displaystyle m(Q_k) = m(P_{k}),-\infty \leqslant k \leqslant -18\)\\
+\(\displaystyle m(R_k) = m(P_{k}),-\infty \leqslant k \leqslant -38\)\\
+\(\displaystyle m(R_k) = m(Q_{k}),-\infty \leqslant k \leqslant -38\)\\
+\hline
+\end{longtable}
+
+
+
+
+\end{document}
