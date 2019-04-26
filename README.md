@@ -26,40 +26,40 @@ pari code for computing mahler measure of polynomials defining genus 2 and 3 cur
 
 * comparej.gp
 
- compare the j-invariant of genus 1 factors
+  compare the j-invariant of genus 1 factors
 
 * comparemahler.gp
 
- compare the mahler measure of different families 
+  compare the mahler measure of different families 
 
 * data2
 
- data for defining reciprocal genus 2 polynomials
+  data for defining reciprocal genus 2 polynomials
 
 * data3
 
- data for defining reciprocal genus 3 polynomials
+  data for defining reciprocal genus 3 polynomials
 
 * jGenus1
 
- data for defining tempered genus 1 families and j-invariant of these families
+  data for defining tempered genus 1 families and j-invariant of these families
 
 * lfunmahlerg2
 
- compare mahler measure of reciprocal genus 2 families and special value of L-functions
+  compare mahler measure of reciprocal genus 2 families and special value of L-functions
 
 * lfunmahlerg3
 
- compare mahler measure of reciprocal genus 3 families and special value of L-functions
+  compare mahler measure of reciprocal genus 3 families and special value of L-functions
 
 * mahler
 
- calculate the Mahler measure of reciprocal polynomial A*y^2+B*y+C
+  calculate the Mahler measure of reciprocal polynomial A*y^2+B*y+C
 
 * mahlergeneral
 
- calculate the Mahler measure of general two variable polynomial
+  calculate the Mahler measure of general two variable polynomial
 
 * otherellipticfactor
 
- compare mahler measure of nonreciprocal families and L-values of elliptic factors
+  compare mahler measure of nonreciprocal families and L-values of elliptic factors
