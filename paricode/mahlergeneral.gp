@@ -10,17 +10,19 @@ defaultprecision=default(realprecision);
 rootprecision=10^(-ceil(defaultprecision/2));
 
 P;
-
+\\ all roots of P
 {
-\\ log of the absolute value of all roots of P
 logr(u)=
 my(x=exp(2*Pi*I*u));
 my(pol=correctpol(eval(P)));
 my(roots);
 if(poldegree(pol,y)==2,roots=abs(rootsd2(pol)),roots=abs(polroots(pol)));
+\\roots=abs(polroots(pol));
+\\this is to avoid log of 0
 for(i=1,#roots,
  if(roots[i]==0,roots[i]=1);
 );
+\\if(#roots==2 && (roots[1]>1 && roots[2]>1), print(u));
 return(vecsort(log(roots)));
 }
 
@@ -34,6 +36,7 @@ return([(-B+sqrt(B^2-4*A*C))/(2*A),(-B-sqrt(B^2-4*A*C))/(2*A)]);
 
 {
 \\ if the real part or imaginary part of coefficients of pol equals 0
+\\ it should be 0, bug of Pari?
 correctpol(pol) =
 my(degree=poldegree(pol));
 my(result=0);
@@ -58,6 +61,7 @@ for(i=1,poldegree(P,y),
   for(j=1,#intervallist,
     if(intervallist[j][1]<=u && u<=intervallist[j][2],
       \\interval contains the point u
+      \\print(u);
       if(i<=#logr,result=result+logr[i]);
       break;
     )
@@ -113,10 +117,12 @@ return(intervallist);
 {
 calcCriticalPoints() =
 my(l1=calcRamiPoints());
+\\print("l1 = ", l1);
 my(l2=calcChangeSignPoints());
+\\print("l2 = ", l2);
 my(jl=joinlist(l1,l2));
-\\add 1/6 to calculate m(P_k(x-1,y)) more accurately
-listput(jl,1/6);
+\\add 1/6 for calculate m(P_k(x-1,y)) more accurately
+\\listput(jl,1/6.0);
 listsort(jl);
 \\print(jl);
 if(#jl==0,listput(jl,0,1);listput(jl,1/2,2));
@@ -127,15 +133,18 @@ return(jl);
 }
 
 
-{
+
 \\ find ramification points and change sign points on unit circle
+{
 \\ramification points
 calcRamiPoints() =
 my(DP=deriv(P,y));
 my(resultant=polresultant(P,DP,y));
+\\print(resultant);
 my(rootuc=listcreate());
 if(resultant==0, return(rootuc));
 my(roots=polroots(resultant));
+\\print(abs(roots));
 for(i=1,#roots,
   if(isOnUnitCircle(roots[i])==true,
     my(root=imag(log(roots[i]))/2/Pi);
@@ -149,10 +158,13 @@ return(rootuc);
 \\change sign points, P is non-reciprocal
 calcChangeSignPoints() =
 my(Q=x^poldegree(P,x)*y^poldegree(P,y)*subst(subst(P,x,1/x),y,1/y));
+\\print(Q);
 my(resultant=polresultant(P,Q,y));
+\\print(resultant);
 my(rootuc=listcreate());
 if(resultant==0, return(rootuc));
 my(roots=polroots(resultant));
+\\print(abs(roots));
 for(i=1,#roots,
   if(isOnUnitCircle(roots[i])==true,
     my(yroots=polroots(subst(P,x,roots[i])));
@@ -174,11 +186,13 @@ if(abs(abs(p)-1)<rootprecision,return(true),return(false));
 }
 
 
-{
+
+
 \\find infinity points
 \\split the interval again if it contains more than 2 infinity points of logr(x)
 \\check if r equals 0 in the interval
 \\ infinity points
+{
 calcInfinityPoints() =
 my(P0=normalize(subst(P,y,0)));
 l=imag(log(polroots(P0)))/2/Pi;
@@ -192,16 +206,17 @@ return(result);
 
 
 {
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\ calculate the Mahler measure of a general two-variable polynomial P
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 calcmahlergeneral() =
 my(degree=poldegree(P,y));
 my(mahler=0);
 my(allintervallist=splitallinterval());
+\\print(allintervallist);
 my(ulist=unionlist(allintervallist));
+\\print(ulist);
 for(i=1,#ulist,
   \\integrate if there is no singularity
+  \\print(i);
+  \\print(ulist[i]);
   mahler=mahler+intnum(x=ulist[i][1],ulist[i][2],integrandgeneral(x,allintervallist));
   \\integrate if there is a singularity, no need now
 );
@@ -209,7 +224,6 @@ return(2*mahler);
 }
 
 {
-\\ check if a polynomial is reciprocal
 checkreciprocal(P) =
 my(P1=subst(subst(P,x,1/x),y,1/y)*x^poldegree(P,x)*y^poldegree(P,y));
 if(P==P1 || P==-P1,
