@@ -35,8 +35,6 @@ return([(-B+sqrt(B^2-4*A*C))/(2*A),(-B-sqrt(B^2-4*A*C))/(2*A)]);
 }
 
 {
-\\ if the real part or imaginary part of coefficients of pol equals 0
-\\ it should be 0, bug of Pari?
 correctpol(pol) =
 my(degree=poldegree(pol));
 my(result=0);
@@ -206,6 +204,9 @@ return(result);
 
 
 {
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\ calculate the Mahler measure of a general two-variable polynomial P
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 calcmahlergeneral() =
 my(degree=poldegree(P,y));
 my(mahler=0);
