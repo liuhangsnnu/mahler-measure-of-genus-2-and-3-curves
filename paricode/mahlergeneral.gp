@@ -137,7 +137,7 @@ return(jl);
 \\ramification points
 calcRamiPoints() =
 my(DP=deriv(P,y));
-my(resultant=polresultant(P,DP,y));
+my(resultant=polresultant(P,DP,y,1));
 \\print(resultant);
 my(rootuc=listcreate());
 if(resultant==0, return(rootuc));
@@ -157,7 +157,7 @@ return(rootuc);
 calcChangeSignPoints() =
 my(Q=x^poldegree(P,x)*y^poldegree(P,y)*subst(subst(P,x,1/x),y,1/y));
 \\print(Q);
-my(resultant=polresultant(P,Q,y));
+my(resultant=polresultant(P,Q,y,1));
 \\print(resultant);
 my(rootuc=listcreate());
 if(resultant==0, return(rootuc));
